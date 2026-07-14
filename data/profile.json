@@ -1,0 +1,140 @@
+{
+  "name": "Kunwa Wang",
+  "initials": "KW",
+  "role": "Researcher",
+  "summary": "I use this space to share my research interests, publications, software projects, teaching, and academic updates.",
+  "photo": "https://avatars.githubusercontent.com/u/36334039?v=4",
+  "facts": [
+    {
+      "label": "Name",
+      "value": "Kunwa Wang"
+    },
+    {
+      "label": "GitHub",
+      "value": "wangkunwlh"
+    },
+    {
+      "label": "Email",
+      "value": "wangkunwlh@outlook.com"
+    },
+    {
+      "label": "Website",
+      "value": "wangkunwlh.github.io"
+    }
+  ],
+  "actions": [
+    {
+      "label": "Contact",
+      "url": "mailto:wangkunwlh@outlook.com",
+      "style": "primary"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/wangkunwlh",
+      "style": "secondary"
+    }
+  ],
+  "research": [
+    {
+      "title": "Research Direction",
+      "description": "Replace this text with your main academic direction: the phenomena, problems, systems, or theories you study."
+    },
+    {
+      "title": "Methods And Tools",
+      "description": "Describe the methods you use, such as modeling, experiments, data analysis, fieldwork, software engineering, or computational workflows."
+    },
+    {
+      "title": "Current Questions",
+      "description": "List the questions you are currently exploring and the kinds of collaborators or discussions you are open to."
+    }
+  ],
+  "publications": [
+    {
+      "title": "Add your first selected publication",
+      "authors": "Kunwa Wang",
+      "venue": "Journal or conference, year",
+      "description": "One sentence about the contribution and why it matters.",
+      "links": [
+        {
+          "label": "PDF",
+          "url": "#"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/wangkunwlh"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Research Project",
+      "description": "A concise description of the project, research question, and current status.",
+      "tags": ["Research", "Open Science"],
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/wangkunwlh"
+        }
+      ]
+    },
+    {
+      "title": "Software Tool",
+      "description": "Add a tool, package, dataset, or reproducible workflow that you want visitors to find quickly.",
+      "tags": ["Software", "Reproducibility"],
+      "links": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/wangkunwlh"
+        }
+      ]
+    },
+    {
+      "title": "Academic Notes",
+      "description": "Use this slot for lecture notes, reading lists, tutorials, or short research explainers.",
+      "tags": ["Writing", "Teaching"],
+      "links": [
+        {
+          "label": "Coming Soon",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "teaching": [
+    {
+      "date": "Year",
+      "title": "Course, talk, workshop, or academic service",
+      "description": "Add teaching assistantships, guest lectures, invited talks, conference service, or community roles."
+    }
+  ],
+  "cv": {
+    "summary": "Upload your current CV as assets/cv.pdf, then change the link below to assets/cv.pdf.",
+    "links": [
+      {
+        "label": "Email for CV",
+        "url": "mailto:wangkunwlh@outlook.com",
+        "style": "primary"
+      }
+    ]
+  },
+  "contactNote": "For academic collaboration, research discussion, or project inquiries.",
+  "contact": [
+    {
+      "label": "Email",
+      "url": "mailto:wangkunwlh@outlook.com"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/wangkunwlh"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "#"
+    },
+    {
+      "label": "ORCID",
+      "url": "#"
+    }
+  ]
+}

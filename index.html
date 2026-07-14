@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Kunwa Wang's personal academic website: research, publications, projects, teaching, and contact information."
+    />
+    <meta name="author" content="Kunwa Wang" />
+    <meta property="og:title" content="Kunwa Wang" />
+    <meta
+      property="og:description"
+      content="Personal academic website for research, publications, projects, and CV."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wangkunwlh.github.io/" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/36334039?v=4" />
+    <title>Kunwa Wang</title>
+    <link rel="preconnect" href="https://avatars.githubusercontent.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Kunwa Wang home">
+          <span class="brand-mark" aria-hidden="true">KW</span>
+          <span class="brand-text">Kunwa Wang</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <div class="nav-links" id="site-menu">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#projects">Projects</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#cv">CV</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow" id="profile-role">Researcher</p>
+            <h1 id="hero-title">Kunwa Wang</h1>
+            <p class="lead" id="profile-summary">
+              Personal academic website for research, publications, projects, and teaching.
+            </p>
+            <div class="hero-actions" id="hero-actions"></div>
+          </div>
+          <figure class="portrait-wrap">
+            <img
+              id="profile-photo"
+              src="https://avatars.githubusercontent.com/u/36334039?v=4"
+              alt="Portrait of Kunwa Wang"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-tight" aria-labelledby="overview-title">
+        <div class="section-inner overview-grid">
+          <div>
+            <p class="section-kicker">Profile</p>
+            <h2 id="overview-title">Research At A Glance</h2>
+          </div>
+          <div class="fact-grid" id="fact-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-inner two-column">
+          <div class="section-heading">
+            <p class="section-kicker">Research</p>
+            <h2 id="research-title">Questions I Care About</h2>
+          </div>
+          <div class="content-stack" id="research-list"></div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="publications" aria-labelledby="publications-title">
+        <div class="section-inner">
+          <div class="section-heading wide">
+            <p class="section-kicker">Publications</p>
+            <h2 id="publications-title">Selected Work</h2>
+            <p id="publications-note">
+              Add papers, preprints, datasets, and software links in <code>data/profile.json</code>.
+            </p>
+          </div>
+          <div class="publication-list" id="publication-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-inner">
+          <div class="section-heading wide">
+            <p class="section-kicker">Projects</p>
+            <h2 id="projects-title">Research And Software Projects</h2>
+          </div>
+          <div class="project-grid" id="project-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="teaching" aria-labelledby="teaching-title">
+        <div class="section-inner two-column">
+          <div class="section-heading">
+            <p class="section-kicker">Teaching</p>
+            <h2 id="teaching-title">Teaching, Talks, And Service</h2>
+          </div>
+          <div class="timeline" id="teaching-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="cv" aria-labelledby="cv-title">
+        <div class="section-inner cv-panel">
+          <div>
+            <p class="section-kicker">CV</p>
+            <h2 id="cv-title">Curriculum Vitae</h2>
+            <p id="cv-summary">
+              Keep a current PDF CV in this repository and link it from <code>data/profile.json</code>.
+            </p>
+          </div>
+          <div class="cv-actions" id="cv-actions"></div>
+        </div>
+      </section>
+
+      <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+        <div class="section-inner contact-grid">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-title">Get In Touch</h2>
+            <p id="contact-note">
+              For academic collaboration, research discussion, or project inquiries.
+            </p>
+          </div>
+          <div class="contact-links" id="contact-links"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <p id="footer-text">© <span id="year"></span> Kunwa Wang.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
