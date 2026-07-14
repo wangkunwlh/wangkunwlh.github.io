@@ -1,18 +1,21 @@
 const fallbackProfile = {
-  name: "Kunwa Wang",
-  role: "Researcher",
+  name: "Kun Wang",
+  role: "Postdoctoral Researcher, Ph.D.",
   summary:
-    "Personal academic website for research, publications, projects, teaching, and collaboration.",
+    "Research on sustainable thermal management, elastocaloric heat pumps, soft active regenerators, and scalable solid-state cooling systems.",
   photo: "https://avatars.githubusercontent.com/u/36334039?v=4",
   facts: [
-    { label: "Name", value: "Kunwa Wang" },
-    { label: "GitHub", value: "wangkunwlh" },
-    { label: "Email", value: "wangkunwlh@outlook.com" },
-    { label: "Website", value: "wangkunwlh.github.io" }
+    { label: "Current position", value: "Postdoctoral Researcher, Institute of Microstructure Technology, KIT" },
+    { label: "Research focus", value: "Elastocaloric cooling, regenerative heat pumps, magnetocaloric materials, additive manufacturing" },
+    { label: "Education", value: "Ph.D., Technical University of Denmark; M.S., University of Chinese Academy of Sciences" },
+    { label: "Profiles", value: "Google Scholar, ORCID, ResearchGate, LinkedIn" }
   ],
   actions: [
-    { label: "Contact", url: "mailto:wangkunwlh@outlook.com", style: "primary" },
-    { label: "GitHub", url: "https://github.com/wangkunwlh", style: "secondary" }
+    { label: "Google Scholar", url: "https://scholar.google.com/citations?user=2DVz9pgAAAAJ&hl=en", icon: "assets/icons/google-scholar.svg" },
+    { label: "ORCID", url: "https://orcid.org/0000-0002-3202-1872", icon: "assets/icons/orcid.svg" },
+    { label: "ResearchGate", url: "https://www.researchgate.net/profile/Kun-Wang-161?ev=hdr_xprf", icon: "assets/icons/researchgate.svg?v=20260714-rg-logo" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/kun-wang-wk8837/", icon: "assets/icons/linkedin.svg" },
+    { label: "Email", url: "mailto:kun.wang@kit.edu", icon: "assets/icons/email.svg" }
   ],
   research: [
     {
@@ -29,41 +32,55 @@ const fallbackProfile = {
   publications: [
     {
       title: "Add your first selected publication",
-      authors: "Kunwa Wang",
+      authors: "Kun Wang",
       venue: "Journal or conference, year",
       description: "Briefly summarize the contribution in one sentence.",
       links: [{ label: "PDF", url: "#" }]
     }
   ],
-  projects: [
+  experience: [
     {
-      title: "Research Project",
-      description: "A concise description of the project, research question, and current status.",
-      tags: ["Research", "Open Science"],
-      links: [{ label: "Code", url: "https://github.com/wangkunwlh" }]
+      date: "Mar 2024 - Present",
+      title: "Postdoctoral Researcher, Karlsruhe Institute of Technology",
+      description: "Institute of Microstructure Technology, Karlsruhe, Germany."
     }
   ],
-  teaching: [
+  education: [
     {
-      date: "Year",
-      title: "Course, talk, workshop, or academic service",
-      description: "Add teaching assistantships, guest lectures, invited talks, and service roles."
+      date: "Dec 2020 - Nov 2023",
+      title: "Ph.D. in Energy Conversion and Storage, Technical University of Denmark",
+      description: "Copenhagen, Denmark. Thesis on 3D-printed soft active elastocaloric regenerators."
+    },
+    {
+      date: "Sep 2017 - Jul 2020",
+      title: "M.S. in Material Physics and Chemistry, University of Chinese Academy of Sciences",
+      description: "Ningbo, China."
+    },
+    {
+      date: "Sep 2013 - Jul 2017",
+      title: "B.C. in Material Processing and Control, Nanjing Agricultural University",
+      description: "Nanjing, China."
     }
   ],
   cv: {
     summary: "Upload your CV PDF to assets/cv.pdf, then set the URL below to assets/cv.pdf.",
-    links: [{ label: "Email for CV", url: "mailto:wangkunwlh@outlook.com", style: "primary" }]
+    links: [{ label: "Email for CV", url: "mailto:kun.wang@kit.edu", style: "primary" }]
   },
   contactNote: "For academic collaboration, research discussion, or project inquiries.",
   contact: [
-    { label: "Email", url: "mailto:wangkunwlh@outlook.com" },
-    { label: "GitHub", url: "https://github.com/wangkunwlh" }
+    { label: "Email", url: "mailto:kun.wang@kit.edu", icon: "assets/icons/email.svg" },
+    { label: "Google Scholar", url: "https://scholar.google.com/citations?user=2DVz9pgAAAAJ&hl=en", icon: "assets/icons/google-scholar.svg" },
+    { label: "ORCID", url: "https://orcid.org/0000-0002-3202-1872", icon: "assets/icons/orcid.svg" },
+    { label: "ResearchGate", url: "https://www.researchgate.net/profile/Kun-Wang-161?ev=hdr_xprf", icon: "assets/icons/researchgate.svg?v=20260714-rg-logo" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/kun-wang-wk8837/", icon: "assets/icons/linkedin.svg" }
   ]
 };
 
 const $ = (selector) => document.querySelector(selector);
 
 function createLink(link, className = "text-link") {
+  if (link.icon) return createIconLink(link);
+
   const anchor = document.createElement("a");
   anchor.href = link.url;
   anchor.textContent = link.label;
@@ -77,7 +94,36 @@ function createLink(link, className = "text-link") {
   return anchor;
 }
 
+function createIconLink(link) {
+  const anchor = document.createElement("a");
+  anchor.href = link.url;
+  anchor.className = "icon-link";
+  anchor.title = link.label;
+  anchor.setAttribute("aria-label", link.label);
+
+  const image = document.createElement("img");
+  image.src = link.icon;
+  image.alt = "";
+  image.width = 24;
+  image.height = 24;
+
+  const label = document.createElement("span");
+  label.className = "sr-only";
+  label.textContent = link.label;
+
+  anchor.append(image, label);
+
+  if (link.url.startsWith("http")) {
+    anchor.target = "_blank";
+    anchor.rel = "noopener noreferrer";
+  }
+
+  return anchor;
+}
+
 function createButton(link) {
+  if (link.icon) return createIconLink(link);
+
   const style = link.style === "secondary" ? "button secondary" : "button";
   return createLink(link, style);
 }
@@ -99,8 +145,8 @@ function renderProfile(profile) {
   renderFacts(profile.facts);
   renderResearch(profile.research);
   renderPublications(profile.publications);
-  renderProjects(profile.projects);
-  renderTeaching(profile.teaching);
+  renderTimeline("#experience-list", profile.experience || profile.teaching || []);
+  renderTimeline("#education-list", profile.education || []);
   renderList("#cv-actions", profile.cv.links, createButton);
   renderList("#contact-links", profile.contact, createLink);
 }
@@ -172,40 +218,7 @@ function renderPublications(items) {
   $("#publication-list").replaceChildren(...nodes);
 }
 
-function renderProjects(items) {
-  const nodes = items.map((entry) => {
-    const card = document.createElement("article");
-    card.className = "project-card";
-
-    const body = document.createElement("div");
-    const title = document.createElement("h3");
-    const description = document.createElement("p");
-    const tags = document.createElement("div");
-
-    title.textContent = entry.title;
-    description.textContent = entry.description;
-    tags.className = "tag-list";
-    tags.replaceChildren(...(entry.tags || []).map(createTag));
-    body.append(title, description, tags);
-
-    const links = document.createElement("div");
-    links.className = "project-links";
-    links.replaceChildren(...(entry.links || []).map((link) => createLink(link)));
-
-    card.append(body, links);
-    return card;
-  });
-  $("#project-grid").replaceChildren(...nodes);
-}
-
-function createTag(text) {
-  const tag = document.createElement("span");
-  tag.className = "tag";
-  tag.textContent = text;
-  return tag;
-}
-
-function renderTeaching(items) {
+function renderTimeline(selector, items) {
   const nodes = items.map((entry) => {
     const item = document.createElement("article");
     item.className = "timeline-item";
@@ -215,7 +228,7 @@ function renderTeaching(items) {
     item.querySelector("p").textContent = entry.description;
     return item;
   });
-  $("#teaching-list").replaceChildren(...nodes);
+  $(selector).replaceChildren(...nodes);
 }
 
 async function loadProfile() {
@@ -246,5 +259,38 @@ function setupNavigation() {
   });
 }
 
+function setupRevealAnimations() {
+  const targets = document.querySelectorAll(
+    ".hero-copy, .portrait-wrap, .section-heading, .fact-item, .research-item, .publication-item, .timeline-item, .cv-panel, .contact-links"
+  );
+
+  targets.forEach((target, index) => {
+    target.classList.add("reveal");
+    target.style.setProperty("--reveal-delay", `${Math.min(index % 6, 5) * 45}ms`);
+  });
+
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reducedMotion || !("IntersectionObserver" in window)) {
+    targets.forEach((target) => target.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+  );
+
+  targets.forEach((target) => observer.observe(target));
+}
+
 setupNavigation();
-loadProfile().then(renderProfile);
+loadProfile().then((profile) => {
+  renderProfile(profile);
+  setupRevealAnimations();
+});

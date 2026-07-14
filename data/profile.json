@@ -1,140 +1,227 @@
 {
   "name": "Kun Wang",
   "initials": "KW",
-  "role": "Researcher",
-  "summary": "I use this space to share my research interests, publications, software projects, teaching, and academic updates.",
+  "role": "Postdoctoral Researcher, Ph.D.",
+  "summary": "I am a postdoctoral researcher at the Institute of Microstructure Technology, Karlsruhe Institute of Technology. My research focuses on sustainable thermal management, elastocaloric heat pumps, soft active regenerators, and numerical design for scalable solid-state cooling systems.",
   "photo": "https://avatars.githubusercontent.com/u/36334039?v=4",
   "facts": [
     {
-      "label": "Name",
-      "value": "Kun Wang"
+      "label": "Current position",
+      "value": "Postdoctoral Researcher, Institute of Microstructure Technology, KIT"
     },
     {
-      "label": "GitHub",
-      "value": "wangkunwlh"
+      "label": "Research focus",
+      "value": "Elastocaloric cooling, regenerative heat pumps, magnetocaloric materials, additive manufacturing"
     },
     {
-      "label": "Email",
-      "value": "wangkunwlh@outlook.com"
+      "label": "Education",
+      "value": "Ph.D., Technical University of Denmark; M.S., University of Chinese Academy of Sciences"
     },
     {
-      "label": "Website",
-      "value": "wangkunwlh.github.io"
+      "label": "Profiles",
+      "value": "Google Scholar, ORCID, ResearchGate, LinkedIn"
     }
   ],
   "actions": [
     {
-      "label": "Contact",
-      "url": "mailto:wangkunwlh@outlook.com",
-      "style": "primary"
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=2DVz9pgAAAAJ&hl=en",
+      "icon": "assets/icons/google-scholar.svg"
     },
     {
-      "label": "GitHub",
-      "url": "https://github.com/wangkunwlh",
-      "style": "secondary"
+      "label": "ORCID",
+      "url": "https://orcid.org/0000-0002-3202-1872",
+      "icon": "assets/icons/orcid.svg"
+    },
+    {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Kun-Wang-161?ev=hdr_xprf",
+      "icon": "assets/icons/researchgate.svg?v=20260714-rg-logo"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/kun-wang-wk8837/",
+      "icon": "assets/icons/linkedin.svg"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:kun.wang@kit.edu",
+      "icon": "assets/icons/email.svg"
     }
   ],
   "research": [
     {
-      "title": "Research Direction",
-      "description": "Replace this text with your main academic direction: the phenomena, problems, systems, or theories you study."
+      "title": "Sustainable Thermal Management",
+      "description": "I work on zero-emission cooling and heat-pump technologies that connect materials science, mechanical design, and thermal system modeling."
     },
     {
-      "title": "Methods And Tools",
-      "description": "Describe the methods you use, such as modeling, experiments, data analysis, fieldwork, software engineering, or computational workflows."
+      "title": "Soft Elastocaloric Devices",
+      "description": "My current research explores low-cost elastocaloric systems, including natural-rubber-based concepts, soft active regenerators, and 3D-printed device architectures."
     },
     {
-      "title": "Current Questions",
-      "description": "List the questions you are currently exploring and the kinds of collaborators or discussions you are open to."
+      "title": "Modeling And Scalable Design",
+      "description": "I develop numerical and thermomechanical models for active regenerators, woven porous structures, and solid-state cooling devices that can move toward practical applications."
     }
   ],
   "publications": [
     {
-      "title": "Add your first selected publication",
-      "authors": "Kun Wang",
-      "venue": "Journal or conference, year",
-      "description": "One sentence about the contribution and why it matters.",
+      "title": "Numerical study of enhanced cooling in active elastocaloric regenerators with porous woven structures",
+      "authors": "K. Wang, M. Kohl, J. Xu",
+      "venue": "Applied Energy, 2025",
+      "description": "First-author work on numerical design for active elastocaloric regenerators with porous woven structures.",
       "links": [
         {
-          "label": "PDF",
-          "url": "#"
-        },
-        {
-          "label": "Code",
-          "url": "https://github.com/wangkunwlh"
-        }
-      ]
-    }
-  ],
-  "projects": [
-    {
-      "title": "Research Project",
-      "description": "A concise description of the project, research question, and current status.",
-      "tags": ["Research", "Open Science"],
-      "links": [
-        {
-          "label": "Code",
-          "url": "https://github.com/wangkunwlh"
+          "label": "DOI",
+          "url": "https://doi.org/10.1016/j.apenergy.2025.126180"
         }
       ]
     },
     {
-      "title": "Software Tool",
-      "description": "Add a tool, package, dataset, or reproducible workflow that you want visitors to find quickly.",
-      "tags": ["Software", "Reproducibility"],
+      "title": "A 3D-printed full-soft regenerative elastocaloric cooler",
+      "authors": "K. Wang, K. Engelbrecht, C. R. H. Bahl, R. Bjork",
+      "venue": "Energy Conversion and Management, 2025",
+      "description": "Corresponding-author work demonstrating a 3D-printed full-soft regenerative elastocaloric cooler.",
       "links": [
         {
-          "label": "Repository",
-          "url": "https://github.com/wangkunwlh"
+          "label": "DOI",
+          "url": "https://doi.org/10.1016/j.enconman.2025.119811"
         }
       ]
     },
     {
-      "title": "Academic Notes",
-      "description": "Use this slot for lecture notes, reading lists, tutorials, or short research explainers.",
-      "tags": ["Writing", "Teaching"],
+      "title": "Volume compensation of large-deformation 3D-printed soft elastomeric elastocaloric regenerators",
+      "authors": "K. Wang, J. T. B. Overvelde, K. Engelbrecht, R. Bjork, C. R. H. Bahl",
+      "venue": "Applied Physics Letters, 2023",
+      "description": "Corresponding-author work on volume compensation for large-deformation soft elastocaloric regenerators.",
       "links": [
         {
-          "label": "Coming Soon",
-          "url": "#"
+          "label": "DOI",
+          "url": "https://doi.org/10.1063/5.0177761"
+        }
+      ]
+    },
+    {
+      "title": "Additive manufactured thermoplastic elastomers for low-stress driven elastocaloric cooling",
+      "authors": "K. Wang, K. Engelbrecht, C. R. H. Bahl",
+      "venue": "Applied Materials Today, 2023",
+      "description": "Corresponding-author work on additive manufactured thermoplastic elastomers for low-stress elastocaloric cooling.",
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1016/j.apmt.2022.101711"
+        }
+      ]
+    },
+    {
+      "title": "High-throughput characterization of the adiabatic temperature change for magnetocaloric materials",
+      "authors": "K. Wang, Y. Ouyang, Y. Shen, Y. Zhang, M. Zhang, J. Liu",
+      "venue": "Journal of Materials Science, 2021",
+      "description": "First-author work on high-throughput characterization for magnetocaloric materials.",
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1007/s10853-020-05403-x"
+        }
+      ]
+    },
+    {
+      "title": "Microchannel magnetic regenerators with optimized porosity by electrodischarge drilling",
+      "authors": "L. Miao, K. Wang, X. Lu, Y. Zhang, J. Liu",
+      "venue": "Materialia, 2024",
+      "description": "Corresponding-author work on optimized microchannel magnetic regenerators.",
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1016/j.mtla.2024.102034"
         }
       ]
     }
   ],
-  "teaching": [
+  "experience": [
     {
-      "date": "Year",
-      "title": "Course, talk, workshop, or academic service",
-      "description": "Add teaching assistantships, guest lectures, invited talks, conference service, or community roles."
+      "date": "Mar 2024 - Present",
+      "title": "Postdoctoral Researcher, Karlsruhe Institute of Technology",
+      "description": "Institute of Microstructure Technology, Karlsruhe, Germany. Advisors: Prof. Manfred Kohl and Dr. Jingyuan Xu."
+    },
+    {
+      "date": "Dec 2023 - Jan 2024",
+      "title": "Research Assistant, Technical University of Denmark",
+      "description": "Department of Energy Conversion and Storage, Copenhagen, Denmark. Advisor: Prof. Rasmus Bjork."
+    },
+    {
+      "date": "Jan 2023 - May 2023",
+      "title": "Visiting Researcher, AMOLF Institute and TU/e",
+      "description": "Soft Robotic Matter Group, Netherlands. Supervisor: Prof. Johannes T. B. Overvelde."
+    }
+  ],
+  "education": [
+    {
+      "date": "Dec 2020 - Nov 2023",
+      "title": "Ph.D. in Energy Conversion and Storage, Technical University of Denmark",
+      "description": "Department of Energy Conversion and Storage, Copenhagen, Denmark. Thesis: Developing and Modelling 3D-printed Soft Active Elastocaloric Regenerators: An exploration for green cooling. Advisors: Prof. Rasmus Bjork, Dr. Christian Bahl, and Dr. Kurt Engelbrecht."
+    },
+    {
+      "date": "Sep 2017 - Jul 2020",
+      "title": "M.S. in Material Physics and Chemistry, University of Chinese Academy of Sciences",
+      "description": "Ningbo, China. Advisor: Prof. Jian Liu."
+    },
+    {
+      "date": "Sep 2013 - Jul 2017",
+      "title": "B.C. in Material Processing and Control, Nanjing Agricultural University",
+      "description": "Nanjing, China."
     }
   ],
   "cv": {
-    "summary": "Upload your current CV as assets/cv.pdf, then change the link below to assets/cv.pdf.",
+    "summary": "For a full CV, publication record, or collaboration discussion, please contact me by email.",
     "links": [
       {
         "label": "Email for CV",
-        "url": "mailto:wangkunwlh@outlook.com",
+        "url": "mailto:kun.wang@kit.edu",
         "style": "primary"
+      },
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=2DVz9pgAAAAJ&hl=en",
+        "icon": "assets/icons/google-scholar.svg"
+      },
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/0000-0002-3202-1872",
+        "icon": "assets/icons/orcid.svg"
+      },
+      {
+        "label": "ResearchGate",
+        "url": "https://www.researchgate.net/profile/Kun-Wang-161?ev=hdr_xprf",
+        "icon": "assets/icons/researchgate.svg?v=20260714-rg-logo"
       }
     ]
   },
-  "contactNote": "For academic collaboration, research discussion, or project inquiries.",
+  "contactNote": "For academic collaboration, research discussion, and opportunities related to sustainable thermal management.",
   "contact": [
     {
       "label": "Email",
-      "url": "mailto:wangkunwlh@outlook.com"
-    },
-    {
-      "label": "GitHub",
-      "url": "https://github.com/wangkunwlh"
+      "url": "mailto:kun.wang@kit.edu",
+      "icon": "assets/icons/email.svg"
     },
     {
       "label": "Google Scholar",
-      "url": "https://scholar.google.com/citations?user=2DVz9pgAAAAJ&hl=en"
+      "url": "https://scholar.google.com/citations?user=2DVz9pgAAAAJ&hl=en",
+      "icon": "assets/icons/google-scholar.svg"
     },
     {
       "label": "ORCID",
-      "url": "https://orcid.org/0000-0002-3202-1872"
+      "url": "https://orcid.org/0000-0002-3202-1872",
+      "icon": "assets/icons/orcid.svg"
+    },
+    {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Kun-Wang-161?ev=hdr_xprf",
+      "icon": "assets/icons/researchgate.svg?v=20260714-rg-logo"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/kun-wang-wk8837/",
+      "icon": "assets/icons/linkedin.svg"
     }
   ]
 }

@@ -1,4 +1,4 @@
-# Kunwa Wang Academic Website
+# Kun Wang Academic Website
 
 This repository contains the source for `https://wangkunwlh.github.io`.
 
@@ -30,7 +30,7 @@ Most content lives in:
 data/profile.json
 ```
 
-Edit that file to update research interests, publications, projects, teaching, CV links, and contact links.
+Edit that file to update the biography, research focus, selected publications, work experience, education, CV links, and profile/contact links.
 
 ## Local Preview
 

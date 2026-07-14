@@ -4,7 +4,7 @@ This website is intentionally simple: no build step, no dependency installation,
 
 ## What To Edit
 
-- `data/profile.json`: most website content, including your biography, research areas, publications, projects, teaching, CV link, and contact links.
+- `data/profile.json`: most website content, including your biography, research focus, selected publications, work experience, education, CV link, and profile/contact links.
 - `assets/cv.pdf`: your current CV. Add this file when you are ready, then update the CV link in `data/profile.json`.
 - `styles.css`: colors, typography, spacing, and responsive layout.
 - `index.html`: page structure. You rarely need to edit this unless you add a new section.
@@ -16,7 +16,7 @@ Open `data/profile.json`, find the `publications` array, and add an object like 
 ```json
 {
   "title": "Paper Title",
-  "authors": "Kunwa Wang, Coauthor Name",
+  "authors": "Kun Wang, Coauthor Name",
   "venue": "Conference or Journal, 2026",
   "description": "One sentence explaining the main contribution.",
   "links": [
@@ -29,18 +29,39 @@ Open `data/profile.json`, find the `publications` array, and add an object like 
 
 Keep commas valid: every item except the last item in an array needs a trailing comma.
 
-## Add A Project
+## Add Work Experience
 
-Open `data/profile.json`, find the `projects` array, and add:
+Open `data/profile.json`, find the `experience` array, and add:
 
 ```json
 {
-  "title": "Project Name",
-  "description": "A concise description of the research or software project.",
-  "tags": ["Research", "Software"],
-  "links": [
-    { "label": "Repository", "url": "https://github.com/wangkunwlh/project" }
-  ]
+  "date": "2026 - Present",
+  "title": "Position, Institution",
+  "description": "A concise description of the role, lab, department, or supervisor."
+}
+```
+
+## Add Education
+
+Open `data/profile.json`, find the `education` array, and add:
+
+```json
+{
+  "date": "2026 - 2029",
+  "title": "Degree, Institution",
+  "description": "Department, location, thesis title, supervisor, or other concise details."
+}
+```
+
+## Add A Profile Icon Link
+
+For Google Scholar, ORCID, ResearchGate, LinkedIn, or email links, use an icon link:
+
+```json
+{
+  "label": "ResearchGate",
+  "url": "https://www.researchgate.net/profile/Kun-Wang-161?ev=hdr_xprf",
+  "icon": "assets/icons/researchgate.svg"
 }
 ```
 
@@ -89,6 +110,5 @@ If the site does not appear immediately, wait a few minutes and check the reposi
 
 - Update publications whenever a paper is accepted, posted to arXiv, or gets code/data.
 - Update CV at least once per semester.
-- Keep a short list of selected projects rather than every experiment.
-- Use GitHub releases or repository tags for important project milestones.
-- Prefer stable links: DOI, arXiv, ORCID, Google Scholar, institutional profile, and GitHub repositories.
+- Keep the homepage concise: selected publications and work experience should be enough for most visitors.
+- Prefer stable links: DOI, arXiv, ORCID, Google Scholar, ResearchGate, LinkedIn, and institutional profiles.
