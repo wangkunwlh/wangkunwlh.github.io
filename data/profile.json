@@ -1,5 +1,5 @@
 {
-  "name": "Kunwa Wang",
+  "name": "Kun Wang",
   "initials": "KW",
   "role": "Researcher",
   "summary": "I use this space to share my research interests, publications, software projects, teaching, and academic updates.",
@@ -7,7 +7,7 @@
   "facts": [
     {
       "label": "Name",
-      "value": "Kunwa Wang"
+      "value": "Kun Wang"
     },
     {
       "label": "GitHub",
@@ -51,7 +51,7 @@
   "publications": [
     {
       "title": "Add your first selected publication",
-      "authors": "Kunwa Wang",
+      "authors": "Kun Wang",
       "venue": "Journal or conference, year",
       "description": "One sentence about the contribution and why it matters.",
       "links": [
@@ -130,11 +130,11 @@
     },
     {
       "label": "Google Scholar",
-      "url": "#"
+      "url": "https://scholar.google.com/citations?user=2DVz9pgAAAAJ&hl=en"
     },
     {
       "label": "ORCID",
-      "url": "#"
+      "url": "https://orcid.org/0000-0002-3202-1872"
     }
   ]
 }
