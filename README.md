@@ -55,3 +55,5 @@ https://wangkunwlh.github.io
 ```
 
 More detailed maintenance notes are in `docs/maintenance.md`.
+
+中文上线与运营维护指南见 `docs/operations-zh.md`。
