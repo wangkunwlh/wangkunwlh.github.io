@@ -131,6 +131,11 @@ code {
   text-decoration: none;
 }
 
+.nav-links a[aria-current="page"] {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .nav-toggle {
   display: none;
   width: 40px;
@@ -152,6 +157,23 @@ code {
 .hero {
   border-bottom: 1px solid var(--line);
   background: var(--surface);
+}
+
+.page-hero {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.page-hero-inner {
+  padding-top: clamp(3rem, 6vw, 5.5rem);
+  padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.page-lead {
+  max-width: 64ch;
+  margin: 1rem 0 0;
+  color: #3d4647;
+  font-size: clamp(1.02rem, 1.35vw, 1.18rem);
 }
 
 .hero-inner {
@@ -380,6 +402,10 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
+.publication-list-numbered {
+  counter-reset: publication;
+}
+
 .research-item,
 .publication-item,
 .timeline-item {
@@ -403,6 +429,21 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 1rem;
+}
+
+.detailed-publication {
+  position: relative;
+  padding-left: 2.1rem;
+}
+
+.detailed-publication::before {
+  counter-increment: publication;
+  content: counter(publication) ".";
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  color: var(--muted);
+  font-weight: 700;
 }
 
 .publication-links {

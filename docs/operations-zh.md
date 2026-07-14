@@ -92,6 +92,7 @@ git push
 - `publications`：只放精选论文，不建议把所有论文都堆在首页。
 - `experience`：工作经历，例如 postdoc、research assistant、visiting researcher。
 - `actions` 和 `contact`：首页和联系区的图标链接。
+- `publications.html`：完整论文列表、会议报告、期刊审稿等学术活动页面。
 
 Google Scholar 的引用数会变化。如果你想在 `facts` 里写 citation/h-index，建议每隔几个月手动更新一次，并写清楚更新时间，例如 `as of July 2026`。
 
@@ -129,7 +130,7 @@ h1 {
 
 ## 添加论文模板
 
-在 `data/profile.json` 的 `publications` 数组中加入：
+如果是首页精选论文，在 `data/profile.json` 的 `publications` 数组中加入：
 
 ```json
 {
@@ -144,6 +145,8 @@ h1 {
   ]
 }
 ```
+
+如果是完整论文列表、会议报告、期刊审稿等内容，直接修改 `publications.html`。首页保持简洁，完整记录放在独立页面。
 
 ## 添加图片
 

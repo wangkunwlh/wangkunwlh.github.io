@@ -5,13 +5,14 @@ This website is intentionally simple: no build step, no dependency installation,
 ## What To Edit
 
 - `data/profile.json`: most website content, including your biography, research focus, selected publications, work experience, CV link, and profile/contact links.
+- `publications.html`: the full publications page, including complete publication lists, conference presentations, and academic service.
 - `assets/cv.pdf`: your current CV. Add this file when you are ready, then update the CV link in `data/profile.json`.
 - `styles.css`: colors, typography, spacing, and responsive layout.
 - `index.html`: page structure. You rarely need to edit this unless you add a new section.
 
 ## Add A Publication
 
-Open `data/profile.json`, find the `publications` array, and add an object like this:
+For selected homepage publications, open `data/profile.json`, find the `publications` array, and add an object like this:
 
 ```json
 {
@@ -28,6 +29,8 @@ Open `data/profile.json`, find the `publications` array, and add an object like 
 ```
 
 Keep commas valid: every item except the last item in an array needs a trailing comma.
+
+For the complete publication record, edit `publications.html` directly. The homepage should stay concise; the dedicated publications page can include full publication lists, manuscripts, conference presentations, and journal reviewing.
 
 ## Add Work Experience
 

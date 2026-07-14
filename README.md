@@ -9,6 +9,7 @@ The site is a static personal academic website designed for GitHub Pages. It has
 ```text
 .
 ├── index.html
+├── publications.html
 ├── styles.css
 ├── script.js
 ├── data/
