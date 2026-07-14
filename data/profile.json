@@ -68,7 +68,6 @@
       "title": "Numerical study of enhanced cooling in active elastocaloric regenerators with porous woven structures",
       "authors": "K. Wang, M. Kohl, J. Xu",
       "venue": "Applied Energy, 2025",
-      "description": "First-author work on numerical design for active elastocaloric regenerators with porous woven structures.",
       "links": [
         {
           "label": "DOI",
@@ -80,7 +79,6 @@
       "title": "A 3D-printed full-soft regenerative elastocaloric cooler",
       "authors": "K. Wang, K. Engelbrecht, C. R. H. Bahl, R. Bjork",
       "venue": "Energy Conversion and Management, 2025",
-      "description": "Corresponding-author work demonstrating a 3D-printed full-soft regenerative elastocaloric cooler.",
       "links": [
         {
           "label": "DOI",
@@ -92,7 +90,6 @@
       "title": "Volume compensation of large-deformation 3D-printed soft elastomeric elastocaloric regenerators",
       "authors": "K. Wang, J. T. B. Overvelde, K. Engelbrecht, R. Bjork, C. R. H. Bahl",
       "venue": "Applied Physics Letters, 2023",
-      "description": "Corresponding-author work on volume compensation for large-deformation soft elastocaloric regenerators.",
       "links": [
         {
           "label": "DOI",
@@ -104,7 +101,6 @@
       "title": "Additive manufactured thermoplastic elastomers for low-stress driven elastocaloric cooling",
       "authors": "K. Wang, K. Engelbrecht, C. R. H. Bahl",
       "venue": "Applied Materials Today, 2023",
-      "description": "Corresponding-author work on additive manufactured thermoplastic elastomers for low-stress elastocaloric cooling.",
       "links": [
         {
           "label": "DOI",
@@ -116,7 +112,6 @@
       "title": "High-throughput characterization of the adiabatic temperature change for magnetocaloric materials",
       "authors": "K. Wang, Y. Ouyang, Y. Shen, Y. Zhang, M. Zhang, J. Liu",
       "venue": "Journal of Materials Science, 2021",
-      "description": "First-author work on high-throughput characterization for magnetocaloric materials.",
       "links": [
         {
           "label": "DOI",
@@ -128,7 +123,6 @@
       "title": "Microchannel magnetic regenerators with optimized porosity by electrodischarge drilling",
       "authors": "L. Miao, K. Wang, X. Lu, Y. Zhang, J. Liu",
       "venue": "Materialia, 2024",
-      "description": "Corresponding-author work on optimized microchannel magnetic regenerators.",
       "links": [
         {
           "label": "DOI",
@@ -152,23 +146,6 @@
       "date": "Jan 2023 - May 2023",
       "title": "Visiting Researcher, AMOLF Institute and TU/e",
       "description": "Soft Robotic Matter Group, Netherlands. Supervisor: Prof. Johannes T. B. Overvelde."
-    }
-  ],
-  "education": [
-    {
-      "date": "Dec 2020 - Nov 2023",
-      "title": "Ph.D. in Energy Conversion and Storage, Technical University of Denmark",
-      "description": "Department of Energy Conversion and Storage, Copenhagen, Denmark. Thesis: Developing and Modelling 3D-printed Soft Active Elastocaloric Regenerators: An exploration for green cooling. Advisors: Prof. Rasmus Bjork, Dr. Christian Bahl, and Dr. Kurt Engelbrecht."
-    },
-    {
-      "date": "Sep 2017 - Jul 2020",
-      "title": "M.S. in Material Physics and Chemistry, University of Chinese Academy of Sciences",
-      "description": "Ningbo, China. Advisor: Prof. Jian Liu."
-    },
-    {
-      "date": "Sep 2013 - Jul 2017",
-      "title": "B.C. in Material Processing and Control, Nanjing Agricultural University",
-      "description": "Nanjing, China."
     }
   ],
   "cv": {

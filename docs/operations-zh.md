@@ -91,7 +91,6 @@ git push
 - `research`：3 个左右研究方向，每个方向一段话即可。
 - `publications`：只放精选论文，不建议把所有论文都堆在首页。
 - `experience`：工作经历，例如 postdoc、research assistant、visiting researcher。
-- `education`：教育经历，例如 Ph.D.、Master、Bachelor。
 - `actions` 和 `contact`：首页和联系区的图标链接。
 
 Google Scholar 的引用数会变化。如果你想在 `facts` 里写 citation/h-index，建议每隔几个月手动更新一次，并写清楚更新时间，例如 `as of July 2026`。
@@ -225,18 +224,6 @@ setupRevealAnimations();
   "date": "2026 - Present",
   "title": "Position, Institution",
   "description": "一句话说明单位、研究所、导师或主要工作。"
-}
-```
-
-## 添加教育经历模板
-
-在 `education` 数组中加入：
-
-```json
-{
-  "date": "2026 - 2029",
-  "title": "Degree, Institution",
-  "description": "一句话说明院系、地点、论文题目、导师或其他重要信息。"
 }
 ```
 

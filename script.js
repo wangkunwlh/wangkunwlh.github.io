@@ -45,23 +45,6 @@ const fallbackProfile = {
       description: "Institute of Microstructure Technology, Karlsruhe, Germany."
     }
   ],
-  education: [
-    {
-      date: "Dec 2020 - Nov 2023",
-      title: "Ph.D. in Energy Conversion and Storage, Technical University of Denmark",
-      description: "Copenhagen, Denmark. Thesis on 3D-printed soft active elastocaloric regenerators."
-    },
-    {
-      date: "Sep 2017 - Jul 2020",
-      title: "M.S. in Material Physics and Chemistry, University of Chinese Academy of Sciences",
-      description: "Ningbo, China."
-    },
-    {
-      date: "Sep 2013 - Jul 2017",
-      title: "B.C. in Material Processing and Control, Nanjing Agricultural University",
-      description: "Nanjing, China."
-    }
-  ],
   cv: {
     summary: "Upload your CV PDF to assets/cv.pdf, then set the URL below to assets/cv.pdf.",
     links: [{ label: "Email for CV", url: "mailto:kun.wang@kit.edu", style: "primary" }]
@@ -146,7 +129,6 @@ function renderProfile(profile) {
   renderResearch(profile.research);
   renderPublications(profile.publications);
   renderTimeline("#experience-list", profile.experience || profile.teaching || []);
-  renderTimeline("#education-list", profile.education || []);
   renderList("#cv-actions", profile.cv.links, createButton);
   renderList("#contact-links", profile.contact, createLink);
 }

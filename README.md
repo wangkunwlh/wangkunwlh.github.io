@@ -30,7 +30,7 @@ Most content lives in:
 data/profile.json
 ```
 
-Edit that file to update the biography, research focus, selected publications, work experience, education, CV links, and profile/contact links.
+Edit that file to update the biography, research focus, selected publications, work experience, CV links, and profile/contact links.
 
 ## Local Preview
 

@@ -4,7 +4,7 @@ This website is intentionally simple: no build step, no dependency installation,
 
 ## What To Edit
 
-- `data/profile.json`: most website content, including your biography, research focus, selected publications, work experience, education, CV link, and profile/contact links.
+- `data/profile.json`: most website content, including your biography, research focus, selected publications, work experience, CV link, and profile/contact links.
 - `assets/cv.pdf`: your current CV. Add this file when you are ready, then update the CV link in `data/profile.json`.
 - `styles.css`: colors, typography, spacing, and responsive layout.
 - `index.html`: page structure. You rarely need to edit this unless you add a new section.
@@ -38,18 +38,6 @@ Open `data/profile.json`, find the `experience` array, and add:
   "date": "2026 - Present",
   "title": "Position, Institution",
   "description": "A concise description of the role, lab, department, or supervisor."
-}
-```
-
-## Add Education
-
-Open `data/profile.json`, find the `education` array, and add:
-
-```json
-{
-  "date": "2026 - 2029",
-  "title": "Degree, Institution",
-  "description": "Department, location, thesis title, supervisor, or other concise details."
 }
 ```
 
