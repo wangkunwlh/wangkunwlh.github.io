@@ -1,13 +1,13 @@
 {
-  "basics": {"name": "Kun Wang", "label": "Postdoctoral Researcher, Ph.D.", "email": "kun.wang@kit.edu", "summary": "Researcher in sustainable thermal management, elastocaloric heat pumps, active regenerators, and numerical design for solid-state cooling.", "location": {"city": "Karlsruhe", "countryCode": "DE"}},
+  "basics": {"name": "Kun Wang", "label": "Postdoctoral Researcher, Ph.D.", "email": "kun.wang@kit.edu", "summary": "Researcher in sustainable thermal management, elastocaloric heat pumps, active regenerators, and numerical design for solid-state cooling.", "location": {"city": "Karlsruhe, DE"}},
   "work": [
-    {"name": "Karlsruhe Institute of Technology", "position": "Postdoctoral Researcher", "location": "Karlsruhe, Germany", "startDate": "2024-03-01", "summary": "Institute of Microstructure Technology. Advisors: Prof. Manfred Kohl and Dr. Jingyuan Xu."},
-    {"name": "Technical University of Denmark", "position": "Research Assistant", "location": "Copenhagen, Denmark", "startDate": "2023-12-01", "endDate": "2024-01-31", "summary": "Department of Energy Conversion and Storage. Advisor: Prof. Rasmus Bjork."},
-    {"name": "AMOLF Institute and TU/e", "position": "Visiting Researcher", "location": "Netherlands", "startDate": "2023-01-01", "endDate": "2023-05-31", "summary": "Soft Robotic Matter Group. Supervisor: Prof. Johannes T. B. Overvelde."}
+    {"name": "Karlsruhe Institute of Technology", "position": "Postdoctoral Researcher", "location": "Karlsruhe, Germany", "startDate": "2024-03-01", "summary": "Institute of Microstructure Technology."},
+    {"name": "Technical University of Denmark", "position": "Research Assistant", "location": "Copenhagen, Denmark", "startDate": "2023-12-01", "endDate": "2024-01-31", "summary": "Department of Energy Conversion and Storage."},
+    {"name": "AMOLF Institute and TU/e", "position": "Visiting Researcher", "location": "Netherlands", "startDate": "2023-01-01", "endDate": "2023-05-31", "summary": "Soft Robotic Matter Group."}
   ],
   "education": [
-    {"institution": "Technical University of Denmark", "area": "Engineering", "studyType": "Ph.D."},
-    {"institution": "University of Chinese Academy of Sciences", "area": "Engineering", "studyType": "M.S."}
+    {"institution": "Technical University of Denmark", "area": "Energy Conversion and Storage", "studyType": "Ph.D.", "startDate": "2020-12-01", "endDate": "2023-11-30"},
+    {"institution": "University of Chinese Academy of Sciences", "area": "Material Physics and Chemistry", "studyType": "M.S.", "startDate": "2017-09-01", "endDate": "2020-06-30"}
   ],
-  "skills": [{"name": "Research areas", "keywords": ["Elastocaloric cooling", "Active regenerators", "Thermal modelling", "Additive manufacturing"]}]
+  "research interests": [{"name": "Keywords", "keywords": ["Elastocaloric cooling", "Active regenerators", "Thermal modelling", "Additive manufacturing"]}]
 }
