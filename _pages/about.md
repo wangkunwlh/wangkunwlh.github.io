@@ -7,7 +7,7 @@ nav: false
 subtitle: Postdoctoral Researcher at the Institute of Microstructure Technology, Karlsruhe Institute of Technology
 profile:
   align: right
-  image: profile-placeholder.svg
+  image: prof_pic.jpg
   image_circular: false
   more_info: >
     <p>Karlsruhe, Germany</p>
