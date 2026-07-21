@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#153e5c"/><stop offset="1" stop-color="#62b6cb"/></linearGradient></defs>
+<rect width="1200" height="700" fill="url(#g)"/><circle cx="920" cy="190" r="150" fill="#f4d35e" opacity=".85"/>
+<path d="M0 560 Q250 380 500 560 T1000 520 T1200 500 V700 H0Z" fill="#102a43" opacity=".7"/>
+<text x="80" y="110" fill="white" font-family="Arial, sans-serif" font-size="42" font-weight="700">Kun Wang</text>
+<text x="80" y="170" fill="white" font-family="Arial, sans-serif" font-size="30">Replace with your image</text>
+</svg>
