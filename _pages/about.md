@@ -11,7 +11,7 @@ profile:
   image_circular: false
   more_info: >
     <p>Karlsruhe, Germany</p>
-    <p>Institute of Microstructure Technology</p>
+    <p>Karlsruhe Institute of Technology</p>
     <p><a href="mailto:kun.wang@kit.edu">kun.wang@kit.edu</a></p>
 selected_papers: true
 social: true
