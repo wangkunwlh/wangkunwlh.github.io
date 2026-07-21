@@ -1,18 +1,96 @@
 {
-  "basics": {"name": "Kun Wang", "label": "Postdoctoral Researcher, Ph.D.", "email": "kun.wang@kit.edu", "summary": "Researcher in sustainable thermal management, elastocaloric heat pumps, active regenerators, and numerical design for solid-state cooling.", "location": {"city": "Karlsruhe", "region": "DE"}},
-  "work": [
-    {"name": "Karlsruhe Institute of Technology", "position": "Postdoctoral Researcher", "location": "Karlsruhe, DE", "startDate": "2024-03-01", "summary": "Institute of Microstructure Technology."},
-    {"name": "Technical University of Denmark", "position": "Research Assistant", "location": "Copenhagen, DK", "startDate": "2023-12-01", "endDate": "2024-01-31", "summary": "Department of Energy Conversion and Storage."},
-    {"name": "AMOLF Institute and TU/e", "position": "Visiting Researcher", "location": "Amsterdam, NL", "startDate": "2023-01-01", "endDate": "2023-05-31", "summary": "Soft Robotic Matter Group."}
-  ],
-  "education": [
-    {"institution": "Technical University of Denmark", "area": "Energy Conversion and Storage", "studyType": "Ph.D.", "location": "Copenhagen, DK", "startDate": "2020-12-01", "endDate": "2023-11-30"},
-    {"institution": "University of Chinese Academy of Sciences", "area": "Material Physics and Chemistry", "studyType": "M.S.", "location": "Beijing & Ningbo, CN", "startDate": "2017-09-01", "endDate": "2020-06-30"}
-  ],
-  "interests": [{"name": "Keywords", "keywords": ["Elastocaloric cooling", "Active regenerators", "Thermal modelling", "Additive manufacturing"]}],
-
-  "languages": [
-  { "language": "Chinese", "fluency": "Native" },
-  { "language": "English", "fluency": "Fluent" }
-]
+    "basics":  {
+                   "name":  "Kun Wang",
+                   "label":  "Postdoctoral Researcher, Ph.D.",
+                   "email":  "kun.wang@kit.edu",
+                   "summary":  "Researcher in sustainable thermal management, elastocaloric heat pumps, active regenerators, and numerical design for solid-state cooling.",
+                   "location":  {
+                                    "city":  "Karlsruhe",
+                                    "region":  "DE"
+                                }
+               },
+    "work":  [
+                 {
+                     "name":  "Karlsruhe Institute of Technology",
+                     "position":  "Postdoctoral Researcher",
+                     "location":  "Karlsruhe, DE",
+                     "startDate":  "2024-03-01",
+                     "summary":  "Institute of Microstructure Technology."
+                 },
+                 {
+                     "name":  "Technical University of Denmark",
+                     "position":  "Research Assistant",
+                     "location":  "Copenhagen, DK",
+                     "startDate":  "2023-12-01",
+                     "endDate":  "2024-01-31",
+                     "summary":  "Department of Energy Conversion and Storage."
+                 },
+                 {
+                     "name":  "AMOLF Institute and TU/e",
+                     "position":  "Visiting Researcher",
+                     "location":  "Amsterdam, NL",
+                     "startDate":  "2023-01-01",
+                     "endDate":  "2023-05-31",
+                     "summary":  "Soft Robotic Matter Group."
+                 }
+             ],
+    "education":  [
+                      {
+                          "institution":  "Technical University of Denmark",
+                          "area":  "Energy Conversion and Storage",
+                          "studyType":  "Ph.D.",
+                          "location":  "Copenhagen, DK",
+                          "startDate":  "2020-12-01",
+                          "endDate":  "2023-11-30"
+                      },
+                      {
+                          "institution":  "University of Chinese Academy of Sciences",
+                          "area":  "Material Physics and Chemistry",
+                          "studyType":  "M.S.",
+                          "location":  "Beijing \u0026 Ningbo, CN",
+                          "startDate":  "2017-09-01",
+                          "endDate":  "2020-06-30"
+                      }
+                  ],
+    "interests":  [
+                      {
+                          "name":  "Keywords",
+                          "keywords":  [
+                                           "Elastocaloric cooling",
+                                           "Active regenerators",
+                                           "Thermal modelling",
+                                           "Additive manufacturing"
+                                       ]
+                      }
+                  ],
+    "languages":  [
+                      {
+                          "language":  "Chinese",
+                          "fluency":  "Native"
+                      },
+                      {
+                          "language":  "English",
+                          "fluency":  "Fluent"
+                      }
+                  ],
+    "talks":  [
+                  {
+                      "date":  "2025",
+                      "event":  "BoKoMat 2025, Ruhr-Universität Bochum, Bochum, Germany",
+                      "title":  "Modeling Woven Porous Regenerators for Elastocaloric Cooling",
+                      "kind":  "Conference presentation"
+                  },
+                  {
+                      "date":  "2025",
+                      "event":  "Elastocalorics 2025, International Conference on Shape Memory Alloys (IES), Saarbrücken, Germany",
+                      "title":  "Developing and Modelling 3D-printed Active Elastocaloric Regenerators",
+                      "kind":  "Invited talk"
+                  },
+                  {
+                      "date":  "2023",
+                      "event":  "Dresden Days on Magnetocalorics, Helmholtz-Zentrum Dresden-Rossendorf (HZDR), Germany",
+                      "title":  "3D-printed soft regenerators for low-stress elastocaloric cooling",
+                      "kind":  "Conference presentation"
+                  }
+              ]
 }

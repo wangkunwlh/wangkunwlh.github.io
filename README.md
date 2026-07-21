@@ -90,9 +90,24 @@ Use a clear file name and keep the PDF below 10 MB when possible.
 ]
 ```
 
-The current JSON Resume CV renderer supports standard sections only (`work`, `education`, `publications`, `skills`, `languages`, and others listed in `_config.yml`). A new custom key such as `talks` will **not** appear automatically.
+### Add conference talks and posters
 
-For a separately titled **Talks & Posters** module, use the existing RenderCV option when you are ready to migrate the full CV: fill `_data/cv.yml`, add a `Talks & Posters:` section under `cv.sections`, then change `cv_format: jsonresume` to `cv_format: rendercv` in `_pages/cv.md`. RenderCV accepts custom section names. Do not switch formats until `_data/cv.yml` has been replaced with your own data; its current contents are only a sample CV.
+This site includes a local CV extension for a separately titled **Talks & Posters** card. Add each item to the `talks` list in `assets/json/resume.json`:
+
+```json
+"talks": [
+  {
+    "date": "2026",
+    "event": "Conference name, city, country",
+    "title": "Presentation title",
+    "kind": "Talk"
+  }
+]
+```
+
+Use `kind: "Poster"`, `"Talk"`, `"Invited talk"`, or another accurate label. `url` is optional and makes the title clickable. Keep the field names unchanged; the CV renderer uses this list to create the **Talks & Posters** card.
+
+For more completely custom CV sections in the future, RenderCV remains an alternative, but do not switch to it until `_data/cv.yml` has been replaced with your own data; its current contents are only a sample CV.
 
 ## Gallery and publication examples
 
