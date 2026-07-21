@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Numerical design for cooling systems
+title: Numerical design for elastocaloric cooling systems
 description: Coupled thermomechanical models for device-level optimisation.
 img: /assets/img/gallery/research-02.svg
 importance: 3
