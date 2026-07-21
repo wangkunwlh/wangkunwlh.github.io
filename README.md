@@ -1,60 +1,55 @@
 # Kun Wang Academic Website
 
-This repository contains the source for `https://wangkunwlh.github.io`.
+Source repository for [wangkunwlh.github.io](https://wangkunwlh.github.io/), the academic website of Kun Wang, Postdoctoral Researcher at the Institute of Microstructure Technology, Karlsruhe Institute of Technology (KIT).
 
-The site is a static personal academic website designed for GitHub Pages. It has no build step and no package dependencies, so normal updates are simple text edits.
+The site uses [al-folio](https://github.com/alshedivat/al-folio), a Jekyll theme for academic websites.
 
-## Site Structure
+## Website content
 
-```text
-.
-├── index.html
-├── publications.html
-├── styles.css
-├── script.js
-├── data/
-│   └── profile.json
-├── assets/
-│   └── cv.pdf
-├── docs/
-│   └── maintenance.md
-├── robots.txt
-├── sitemap.xml
-└── .nojekyll
-```
+- About, Blog, Research, Publications, Gallery, CV, and Contact pages
+- BibTeX-managed publications with DOI links, selected papers, and thumbnails
+- Research projects and news
+- Dark mode and responsive layout
 
-## Quick Edit
+## Update content
 
-Most content lives in:
+| Content | Location |
+| --- | --- |
+| Personal profile and site settings | _config.yml, _data/socials.yml, _pages/about.md |
+| Publications | _bibliography/papers.bib |
+| Research projects | _projects/ |
+| News | _news/ |
+| Blog posts | _posts/ |
+| CV | assets/json/resume.json |
+| Gallery images | assets/img/gallery/ |
 
-```text
-data/profile.json
-```
+For a publication, add optional BibTeX fields such as pdf, code, and supp only when the corresponding files or URLs are available.
 
-Edit that file to update the biography, research focus, selected publications, work experience, CV links, and profile/contact links.
+## Local preview
 
-## Local Preview
+Install Ruby, Bundler, Node.js, and ImageMagick, then run:
 
-```bash
-python3 -m http.server 8000
-```
+~~~bash
+npm ci
+bundle install
+bundle exec jekyll build
+bundle exec jekyll serve
+~~~
 
-Open `http://localhost:8000`.
+Open http://localhost:4000.
 
 ## Deployment
 
-Create a public GitHub repository named exactly:
+The GitHub Actions deployment workflow runs only when changes are pushed to main or master. The current al-folio version is on al-folio-v1; merge that branch into main and push it to deploy the new website.
 
-```text
-wangkunwlh.github.io
-```
+~~~bash
+git checkout main
+git merge al-folio-v1
+git push origin main
+~~~
 
-Push these files to the `main` branch. GitHub Pages will publish the website at:
+GitHub Pages deployment can take a few minutes. Check the repository Actions tab for the Deploy site workflow result.
 
-```text
-https://wangkunwlh.github.io
-```
+## License
 
-More detailed maintenance notes are in `docs/maintenance.md`.
-
-中文上线与运营维护指南见 `docs/operations-zh.md`。
+The site is based on al-folio, distributed under the MIT License.
