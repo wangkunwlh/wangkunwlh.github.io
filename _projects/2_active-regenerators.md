@@ -2,7 +2,7 @@
 layout: page
 title: Active regenerative heat pumps
 description: Porous and woven regenerative structures for enhanced thermal performance.
-img: gallery/research-02.svg
+img: /assets/img/gallery/1.jpg
 importance: 2
 category: devices
 ---
