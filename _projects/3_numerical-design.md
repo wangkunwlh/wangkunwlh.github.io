@@ -2,7 +2,7 @@
 layout: page
 title: Numerical design for cooling systems
 description: Coupled thermomechanical models for device-level optimisation.
-img: gallery/research-02.svg
+img: /assets/img/gallery/research-02.svg
 importance: 3
 category: modeling
 ---

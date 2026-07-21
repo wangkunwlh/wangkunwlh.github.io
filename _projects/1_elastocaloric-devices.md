@@ -2,7 +2,7 @@
 layout: page
 title: Soft elastocaloric devices
 description: Low-cost solid-state cooling concepts based on soft materials and additive manufacturing.
-img: /assets/img/gallery/3.jpg
+img: /assets/img/3.jpg
 importance: 1
 category: devices
 ---
