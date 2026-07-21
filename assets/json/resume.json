@@ -3,11 +3,11 @@
   "work": [
     {"name": "Karlsruhe Institute of Technology", "position": "Postdoctoral Researcher", "location": "Karlsruhe, Germany", "startDate": "2024-03-01", "summary": "Institute of Microstructure Technology."},
     {"name": "Technical University of Denmark", "position": "Research Assistant", "location": "Copenhagen, Denmark", "startDate": "2023-12-01", "endDate": "2024-01-31", "summary": "Department of Energy Conversion and Storage."},
-    {"name": "AMOLF Institute and TU/e", "position": "Visiting Researcher", "location": "Netherlands", "startDate": "2023-01-01", "endDate": "2023-05-31", "summary": "Soft Robotic Matter Group."}
+    {"name": "AMOLF Institute and TU/e", "position": "Visiting Researcher", "location": "Amsterdam, Netherlands", "startDate": "2023-01-01", "endDate": "2023-05-31", "summary": "Soft Robotic Matter Group."}
   ],
   "education": [
-    {"institution": "Technical University of Denmark", "area": "Energy Conversion and Storage", "studyType": "Ph.D.", "startDate": "2020-12-01", "endDate": "2023-11-30"},
-    {"institution": "University of Chinese Academy of Sciences", "area": "Material Physics and Chemistry", "studyType": "M.S.", "startDate": "2017-09-01", "endDate": "2020-06-30"}
+    {"institution": "Technical University of Denmark", "area": "Energy Conversion and Storage", "studyType": "Ph.D.", "location": "Copenhagen, Denmark", "startDate": "2020-12-01", "endDate": "2023-11-30"},
+    {"institution": "University of Chinese Academy of Sciences", "area": "Material Physics and Chemistry", "studyType": "M.S.", "location": "Beijing & Ningbo, China", "startDate": "2017-09-01", "endDate": "2020-06-30"}
   ],
-  "research interests": [{"name": "Keywords", "keywords": ["Elastocaloric cooling", "Active regenerators", "Thermal modelling", "Additive manufacturing"]}]
+  "interests": [{"name": "Keywords", "keywords": ["Elastocaloric cooling", "Active regenerators", "Thermal modelling", "Additive manufacturing"]}]
 }
