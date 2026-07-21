@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Active regenerative coolers and heat pumps
+title: Regenerative coolers and heat pumps
 description: Porous and woven regenerative structures for enhanced thermal performance.
 img: /assets/img/1.jpg
 importance: 2
