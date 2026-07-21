@@ -2,8 +2,8 @@
 layout: about
 title: About
 permalink: /
-nav: true
-nav_order: 1
+# The theme generates the home/About navigation item automatically.
+nav: false
 subtitle: Postdoctoral Researcher at the Institute of Microstructure Technology, Karlsruhe Institute of Technology
 profile:
   align: right
