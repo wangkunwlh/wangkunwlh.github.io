@@ -23,6 +23,12 @@ jobs:
         with:
           ruby-version: '3.3.5'
           bundler-cache: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+      - name: Install Python dependencies
+        run: pip install --upgrade nbconvert
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
