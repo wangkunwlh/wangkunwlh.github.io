@@ -1,5 +1,5 @@
 {
-  "basics": {"name": "Kun Wang", "label": "Postdoctoral Researcher, Ph.D.", "email": "kun.wang@kit.edu", "summary": "Researcher in sustainable thermal management, elastocaloric heat pumps, active regenerators, and numerical design for solid-state cooling.", "location": {"city": "Karlsruhe, DE"}},
+  "basics": {"name": "Kun Wang", "label": "Postdoctoral Researcher, Ph.D.", "email": "kun.wang@kit.edu", "summary": "Researcher in sustainable thermal management, elastocaloric heat pumps, active regenerators, and numerical design for solid-state cooling.", "location": {"city": "Karlsruhe", "region": "DE"}},
   "work": [
     {"name": "Karlsruhe Institute of Technology", "position": "Postdoctoral Researcher", "location": "Karlsruhe, Germany", "startDate": "2024-03-01", "summary": "Institute of Microstructure Technology."},
     {"name": "Technical University of Denmark", "position": "Research Assistant", "location": "Copenhagen, Denmark", "startDate": "2023-12-01", "endDate": "2024-01-31", "summary": "Department of Energy Conversion and Storage."},

@@ -79,6 +79,21 @@ The CV page is generated from `assets/json/resume.json`. To also offer a downloa
 
 Use a clear file name and keep the PDF below 10 MB when possible.
 
+### Add CV sections: Languages, Talks & Posters
+
+`Languages` is a built-in JSON Resume section. Add it at the same top level as `work` and `education` in `assets/json/resume.json`:
+
+```json
+"languages": [
+  { "language": "Chinese", "fluency": "Native" },
+  { "language": "English", "fluency": "Professional working proficiency" }
+]
+```
+
+The current JSON Resume CV renderer supports standard sections only (`work`, `education`, `publications`, `skills`, `languages`, and others listed in `_config.yml`). A new custom key such as `talks` will **not** appear automatically.
+
+For a separately titled **Talks & Posters** module, use the existing RenderCV option when you are ready to migrate the full CV: fill `_data/cv.yml`, add a `Talks & Posters:` section under `cv.sections`, then change `cv_format: jsonresume` to `cv_format: rendercv` in `_pages/cv.md`. RenderCV accepts custom section names. Do not switch formats until `_data/cv.yml` has been replaced with your own data; its current contents are only a sample CV.
+
 ## Gallery and publication examples
 
 To replace a Gallery item in `_pages/gallery.md`, change both the filename and text:
