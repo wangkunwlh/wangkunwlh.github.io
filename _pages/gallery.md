@@ -19,6 +19,6 @@ nav_order: 5
 <div class="row row-cols-1 row-cols-md-2 g-4">
 <div class="col"><img class="img-fluid rounded" src="{{ '/assets/img/gallery/5.jpg' | relative_url }}" alt="Travel placeholder"><p class="mt-2">Everyday discoveries</p></div>
 <div class="col"><img class="img-fluid rounded" src="{{ '/assets/img/gallery/7.jpg' | relative_url }}" alt="Travel placeholder"><p class="mt-2">Places, people, and landscapes</p></div>
-<div class="col"><img class="img-fluid rounded" src="{{ '/assets/img/gallery/porto-sunset.jpg' | relative_url }}" alt="Sunset over the Douro"><p class="mt-2">Sunset over the Douro</p></div>
+<div class="col"><img class="img-fluid rounded" src="{{ '/assets/img/gallery/porto-sunset.jpg' | relative_url }}" alt="Sunset"><p class="mt-2">Sunset</p></div>
 </div>
 
