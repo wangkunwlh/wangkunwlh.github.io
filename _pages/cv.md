@@ -2,8 +2,7 @@
 layout: cv
 permalink: /cv/
 title: CV
-nav: true
-nav_order: 6
+nav: false
 cv_format: jsonresume
 description: Academic CV of Kun Wang.
 toc:

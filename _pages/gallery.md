@@ -4,7 +4,7 @@ title: Gallery
 permalink: /gallery/
 description: Research snapshots and moments from life on the road.
 nav: true
-nav_order: 5
+nav_order: 4
 ---
 
 ## Research

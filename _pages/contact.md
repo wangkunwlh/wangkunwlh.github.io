@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 description: Get in touch for academic collaboration and research discussion.
 nav: true
-nav_order: 7
+nav_order: 6
 ---
 
 I welcome conversations about sustainable thermal management, elastocaloric cooling, active regenerators, and collaborative research.

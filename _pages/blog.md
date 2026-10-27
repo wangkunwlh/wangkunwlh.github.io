@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Blog
+title: News
 permalink: /blog/
 nav: true
-nav_order: 2
+nav_order: 5
 description: Notes on thermal management, elastocalorics, and research life.
 ---
 

@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 description: Research directions and active projects in sustainable thermal management.
 nav: true
-nav_order: 3
+nav_order: 2
 display_categories: [devices, modeling]
 horizontal: false
 ---

@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: Home
 permalink: /
 # The theme generates the home/About navigation item automatically.
 nav: false
@@ -29,4 +29,4 @@ I am a postdoctoral researcher at the Institute of Microstructure Technology, Ka
 
 My research connects functional materials, mechanical design, additive manufacturing, and heat-transfer modelling. I am particularly interested in low-cost elastocaloric devices based on soft materials and porous regenerative architectures.
 
-Please see my [research](/research/), [publications](/publications/), and [CV](/cv/), or get in touch by email.
+Please see my [research](/research/) and [publications](/publications/), or get in touch by email.
