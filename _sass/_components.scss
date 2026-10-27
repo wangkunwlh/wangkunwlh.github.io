@@ -354,10 +354,19 @@ ul.task-list input[type="checkbox"] {
     width: 100%;
   }
 
-  span {
+  .recent-publication-title {
     display: block;
     line-height: 1.35;
     padding: 0.85rem;
+  }
+
+  .recent-publication-authors {
+    color: var(--global-text-color-light);
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 400;
+    line-height: 1.35;
+    padding: 0 0.85rem 0.85rem;
   }
 
   &:hover {

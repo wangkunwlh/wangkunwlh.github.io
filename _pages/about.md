@@ -47,7 +47,8 @@ Please see my [research](/research/) and [publications](/publications/), or get 
     {% for publication in site.data.recent_publications %}
       <a class="recent-publication-card" href="https://doi.org/{{ publication.doi }}" target="_blank" rel="external noopener">
         <img src="{{ publication.image | relative_url }}" alt="{{ publication.alt }}">
-        <span>{{ publication.title }}</span>
+        <span class="recent-publication-title">{{ publication.title }}</span>
+        <span class="recent-publication-authors">{{ publication.authors }}</span>
       </a>
     {% endfor %}
   </div>

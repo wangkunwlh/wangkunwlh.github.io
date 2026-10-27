@@ -1,6 +1,7 @@
 [
   {
     "title": "Dynamic-mesh modeling of low-cost polymer microchannel regenerators for elastocaloric cooling",
+    "authors": "Kun Wang, Qing Wang, Manfred Kohl, Rasmus Bj\u00f8rk, and Jingyuan Xu",
     "doi": "10.1016/j.enconman.2026.122234",
     "year": "2027",
     "image": "/assets/img/publication_figures/dynamic-mesh-microchannel.png",
@@ -8,6 +9,7 @@
   },
   {
     "title": "Numerical study of enhanced cooling in active elastocaloric regenerators with porous woven structures",
+    "authors": "Kun Wang, Manfred Kohl, and Jingyuan Xu",
     "doi": "10.1016/j.apenergy.2025.126180",
     "year": "2025",
     "image": "/assets/img/publication_figures/woven-figure-1.png",
@@ -15,6 +17,7 @@
   },
   {
     "title": "A 3D-printed full-soft regenerative elastocaloric cooler",
+    "authors": "Kun Wang, Kurt Engelbrecht, Christian R. H. Bahl, and Rasmus Bjork",
     "doi": "10.1016/j.enconman.2025.119811",
     "year": "2025",
     "image": "/assets/img/publication_figures/full-soft-cycle.png",

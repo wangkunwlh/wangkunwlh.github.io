@@ -123,6 +123,19 @@ def bibtex_articles(bibtex: str) -> list[dict[str, str]]:
     return articles
 
 
+def display_authors(authors: str) -> str:
+    """Convert BibTeX's 'Family, Given and …' syntax to readable names."""
+    names = []
+    for author in authors.split(" and "):
+        family, separator, given = author.partition(",")
+        names.append(f"{given.strip()} {family.strip()}" if separator else family.strip())
+    if len(names) <= 1:
+        return "".join(names)
+    if len(names) == 2:
+        return " and ".join(names)
+    return ", ".join(names[:-1]) + ", and " + names[-1]
+
+
 def write_recent_publications(bibtex: str) -> None:
     """Publish the three newest BibTeX articles for the homepage cards."""
     image_overrides = json.loads(RECENT_IMAGES_FILE.read_text(encoding="utf-8"))
@@ -138,6 +151,7 @@ def write_recent_publications(bibtex: str) -> None:
         cards.append(
             {
                 "title": article["title"],
+                "authors": display_authors(article.get("author", "")),
                 "doi": doi,
                 "year": article["year"],
                 "image": image,
