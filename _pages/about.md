@@ -44,18 +44,12 @@ Please see my [research](/research/) and [publications](/publications/), or get 
 <section class="home-recent-publications">
   <h2>Recent publications</h2>
   <div class="recent-publication-grid">
-    <a class="recent-publication-card" href="https://doi.org/10.1016/j.apenergy.2025.126180" target="_blank" rel="external noopener">
-      <img src="{{ '/assets/img/publication_figures/woven-figure-1.png' | relative_url }}" alt="Figure 1 from the woven-regenerator publication">
-      <span>Numerical study of enhanced cooling in active elastocaloric regenerators with porous woven structures</span>
-    </a>
-    <a class="recent-publication-card" href="https://doi.org/10.1016/j.enconman.2025.119811" target="_blank" rel="external noopener">
-      <img src="{{ '/assets/img/publication_figures/soft-figure-1.jpg' | relative_url }}" alt="Figure 1 from the full-soft regenerative cooler publication">
-      <span>A 3D-printed full-soft regenerative elastocaloric cooler</span>
-    </a>
-    <a class="recent-publication-card" href="https://doi.org/10.1063/5.0177761" target="_blank" rel="external noopener">
-      <img src="{{ '/assets/img/publication_figures/volume-figure-1.png' | relative_url }}" alt="Figure 1 from the volume-compensation publication">
-      <span>Volume compensation of large-deformation 3D-printed soft elastomeric elastocaloric regenerators</span>
-    </a>
+    {% for publication in site.data.recent_publications %}
+      <a class="recent-publication-card" href="https://doi.org/{{ publication.doi }}" target="_blank" rel="external noopener">
+        <img src="{{ publication.image | relative_url }}" alt="{{ publication.alt }}">
+        <span>{{ publication.title }}</span>
+      </a>
+    {% endfor %}
   </div>
   <a class="all-publications-btn" href="{{ '/publications/' | relative_url }}">All publications</a>
 </section>

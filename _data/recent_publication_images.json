@@ -1,0 +1,18 @@
+{
+  "10.1016/j.apenergy.2025.126180": {
+    "image": "/assets/img/publication_figures/woven-figure-1.png",
+    "alt": "Figure 1 from the woven-regenerator publication"
+  },
+  "10.1016/j.enconman.2025.119811": {
+    "image": "/assets/img/publication_figures/full-soft-cycle.png",
+    "alt": "Cooling-cycle schematic from the full-soft regenerative cooler publication"
+  },
+  "10.1016/j.enconman.2026.122234": {
+    "image": "/assets/img/publication_figures/dynamic-mesh-microchannel.png",
+    "alt": "Microchannel model schematic from the dynamic-mesh publication"
+  },
+  "10.1063/5.0177761": {
+    "image": "/assets/img/publication_figures/volume-figure-1.png",
+    "alt": "Figure 1 from the volume-compensation publication"
+  }
+}

@@ -18,6 +18,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SOCIALS_FILE = ROOT / "_data" / "socials.yml"
 BIB_FILE = ROOT / "_bibliography" / "papers.bib"
 COVERS_FILE = ROOT / "_data" / "journal_covers.json"
+RECENT_IMAGES_FILE = ROOT / "_data" / "recent_publication_images.json"
+RECENT_PUBLICATIONS_FILE = ROOT / "_data" / "recent_publications.json"
 USER_AGENT = "KunWangWebsite/1.0 (mailto:kun.wang@kit.edu)"
 
 
@@ -108,6 +110,43 @@ def render_article(metadata: dict, key: str, preview: str | None) -> str:
     return f"@article{{{key},\n  {body}\n}}\n"
 
 
+def bibtex_articles(bibtex: str) -> list[dict[str, str]]:
+    """Read the article fields needed for the homepage in source order."""
+    articles: list[dict[str, str]] = []
+    for entry in re.finditer(r"@article\s*{([^,]+),(.*?)(?=^@|\Z)", bibtex, re.MULTILINE | re.DOTALL | re.IGNORECASE):
+        fields = {
+            name.lower(): value.strip()
+            for name, value in re.findall(r"\b([A-Za-z]+)\s*=\s*{([^}]*)}", entry.group(2))
+        }
+        if fields.get("title") and fields.get("doi") and fields.get("year"):
+            articles.append(fields)
+    return articles
+
+
+def write_recent_publications(bibtex: str) -> None:
+    """Publish the three newest BibTeX articles for the homepage cards."""
+    image_overrides = json.loads(RECENT_IMAGES_FILE.read_text(encoding="utf-8"))
+    articles = bibtex_articles(bibtex)
+    recent = sorted(articles, key=lambda article: int(re.search(r"\d{4}", article["year"]).group()), reverse=True)[:3]
+    cards = []
+    for article in recent:
+        doi = article["doi"].lower()
+        override = image_overrides.get(doi, {})
+        image = override.get("image")
+        if not image:
+            image = f"/assets/img/publication_preview/{article.get('preview', 'research-elastocaloric.svg')}"
+        cards.append(
+            {
+                "title": article["title"],
+                "doi": doi,
+                "year": article["year"],
+                "image": image,
+                "alt": override.get("alt", f"Publication preview for {article['title']}"),
+            }
+        )
+    RECENT_PUBLICATIONS_FILE.write_text(json.dumps(cards, indent=2) + "\n", encoding="utf-8")
+
+
 def main() -> None:
     bibtex = BIB_FILE.read_text(encoding="utf-8")
     known_dois = existing_dois(bibtex)
@@ -138,9 +177,12 @@ def main() -> None:
         print(f"Adding {metadata['DOI']}: {' '.join(metadata.get('title', []))}")
 
     if not additions:
+        write_recent_publications(bibtex)
         print("No missing journal articles found.")
         return
-    BIB_FILE.write_text(bibtex.rstrip() + "\n\n" + "\n".join(additions), encoding="utf-8")
+    updated_bibtex = bibtex.rstrip() + "\n\n" + "\n".join(additions)
+    BIB_FILE.write_text(updated_bibtex, encoding="utf-8")
+    write_recent_publications(updated_bibtex)
     print(f"Added {len(additions)} journal article(s) to {BIB_FILE.relative_to(ROOT)}.")
 
 

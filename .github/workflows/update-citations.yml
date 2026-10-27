@@ -29,7 +29,7 @@ jobs:
           git config --local user.name "GitHub Actions"
       - name: Commit new publications if needed
         run: |
-          git add _bibliography/papers.bib
+          git add _bibliography/papers.bib _data/recent_publications.json
           git diff --staged --quiet || (
             git commit -m "Sync publications from ORCID"
             git push

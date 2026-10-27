@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Dynamic-mesh modeling of low-cost polymer microchannel regenerators for elastocaloric cooling",
+    "doi": "10.1016/j.enconman.2026.122234",
+    "year": "2027",
+    "image": "/assets/img/publication_figures/dynamic-mesh-microchannel.png",
+    "alt": "Microchannel model schematic from the dynamic-mesh publication"
+  },
+  {
+    "title": "Numerical study of enhanced cooling in active elastocaloric regenerators with porous woven structures",
+    "doi": "10.1016/j.apenergy.2025.126180",
+    "year": "2025",
+    "image": "/assets/img/publication_figures/woven-figure-1.png",
+    "alt": "Figure 1 from the woven-regenerator publication"
+  },
+  {
+    "title": "A 3D-printed full-soft regenerative elastocaloric cooler",
+    "doi": "10.1016/j.enconman.2025.119811",
+    "year": "2025",
+    "image": "/assets/img/publication_figures/full-soft-cycle.png",
+    "alt": "Cooling-cycle schematic from the full-soft regenerative cooler publication"
+  }
+]
