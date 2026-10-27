@@ -1,0 +1,20 @@
+{% if entry.doi %}
+  <script>
+    (() => {
+      const publication = document.currentScript.closest('#{{ entry.key }}');
+      const title = publication?.querySelector('.title');
+      const doi = 'https://doi.org/{{ entry.doi }}';
+
+      if (title && !title.querySelector('a')) {
+        const link = document.createElement('a');
+        link.href = doi;
+        link.target = '_blank';
+        link.rel = 'external noopener';
+        link.textContent = title.textContent;
+        title.replaceChildren(link);
+      }
+
+      publication?.querySelector(`.links a[href="${doi}"]`)?.remove();
+    })();
+  </script>
+{% endif %}

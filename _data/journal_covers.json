@@ -19,6 +19,22 @@
     "preview": "energy-conversion-management.jpg",
     "source": "https://www.elsevier.com/subject/energy/journals/batteries-and-energy-storage"
   },
+  "Energy": {
+    "preview": "energy.png",
+    "source": "https://www.sciencedirect.com/journal/energy/vol/310/suppl/C"
+  },
+  "Materialia": {
+    "preview": "materialia.png",
+    "source": "https://www.sciencedirect.com/journal/materialia"
+  },
+  "Intermetallics": {
+    "preview": "intermetallics.png",
+    "source": "https://www.sciencedirect.com/journal/intermetallics"
+  },
+  "Applied Physics Letters": {
+    "preview": "applied-physics-letters.png",
+    "source": "https://pubs.aip.org/aip/apl/issue/123/22"
+  },
   "Journal of Alloys and Compounds": {
     "preview": "journal-alloys-compounds.jpg",
     "source": "https://www.elsevier.com/subject/energy/journals/batteries-and-energy-storage"
