@@ -282,3 +282,109 @@ ul.task-list input[type="checkbox"] {
 .d2h-diff-table {
   position: relative;
 }
+
+// Compact publication entries and keep DOI-linked titles consistent with body text.
+.publications {
+  .title a {
+    color: var(--global-text-color);
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+
+  .links:empty {
+    display: none;
+  }
+
+  .abbr .preview {
+    max-height: 8rem;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  > ol.bibliography > li {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.home-news,
+.home-latest-posts,
+.home-recent-publications {
+  margin: 3rem auto;
+  max-width: 72rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.home-news .news,
+.home-latest-posts .news {
+  margin: 0 auto;
+  max-width: 52rem;
+  text-align: left;
+}
+
+.recent-publication-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  text-align: left;
+}
+
+.recent-publication-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.4rem;
+  color: var(--global-text-color);
+  display: block;
+  font-weight: 700;
+  overflow: hidden;
+  text-decoration: none;
+
+  img {
+    display: block;
+    height: 11rem;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  span {
+    display: block;
+    line-height: 1.35;
+    padding: 0.85rem;
+  }
+
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+.all-publications-btn {
+  background: var(--global-theme-color);
+  border-radius: 0.35rem;
+  color: #fff !important;
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+
+  &:hover {
+    color: #fff !important;
+    opacity: 0.9;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .recent-publication-grid {
+    grid-template-columns: 1fr;
+  }
+}

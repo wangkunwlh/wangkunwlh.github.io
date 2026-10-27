@@ -14,7 +14,11 @@
         title.replaceChildren(link);
       }
 
-      const removeDoiButton = () => publication?.querySelector(`.links a[href="${doi}"]`)?.remove();
+      const removeDoiButton = () => {
+        const links = publication?.querySelector('.links');
+        links?.querySelector(`a[href="${doi}"]`)?.remove();
+        if (links && !links.querySelector('a')) links.remove();
+      };
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', removeDoiButton, { once: true });
       } else {
