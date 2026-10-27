@@ -23,6 +23,12 @@ Source repository for [wangkunwlh.github.io](https://wangkunwlh.github.io/). The
 | Web CV | `assets/json/resume.json` |
 | Gallery images and captions | `assets/img/gallery/` and `_pages/gallery.md` |
 
+## Automatic publication sync
+
+Every Monday, the **Sync Publications from ORCID** GitHub Action reads the public works list for the ORCID set in `_data/socials.yml`, finds DOI-backed journal articles missing from `_bibliography/papers.bib`, obtains their standard metadata from Crossref, and commits them to `main`. A successful sync automatically triggers the Pages deployment. Existing BibTeX entries are never rewritten, so add `selected`, `pdf`, `code`, `supp`, and `preview` fields manually after a new item appears.
+
+Google Scholar is linked from the site and remains useful for citation counts, but it has no stable public API for safely rebuilding a BibTeX bibliography. The old Scholar scraping cache was therefore removed: it was not used by the Publications page and contained stale sample data.
+
 ## Colours and bottom social icons
 
 The site now uses the official blue token (`v.$blue-color`) in `_sass/_themes.scss`, for both light and dark modes. To choose another colour later, change the two `--global-theme-color` and `--global-hover-color` values in that file; keep the surrounding syntax unchanged.
