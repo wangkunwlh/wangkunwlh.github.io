@@ -17,6 +17,7 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[1]
 SOCIALS_FILE = ROOT / "_data" / "socials.yml"
 BIB_FILE = ROOT / "_bibliography" / "papers.bib"
+COVERS_FILE = ROOT / "_data" / "journal_covers.json"
 USER_AGENT = "KunWangWebsite/1.0 (mailto:kun.wang@kit.edu)"
 
 
@@ -38,6 +39,16 @@ def load_orcid_id() -> str:
     if not match:
         raise RuntimeError("Missing 'orcid_id' in _data/socials.yml")
     return match.group(1)
+
+
+def load_journal_covers() -> dict[str, str]:
+    """Return locally stored official-cover previews, keyed by journal title."""
+    data = json.loads(COVERS_FILE.read_text(encoding="utf-8"))
+    return {
+        journal: details["preview"]
+        for journal, details in data.items()
+        if (ROOT / "assets" / "img" / "publication_preview" / details.get("preview", "")).is_file()
+    }
 
 
 def extract_dois(orcid_record: dict) -> set[str]:
@@ -75,7 +86,7 @@ def article_key(metadata: dict, used_keys: set[str]) -> str:
     return key
 
 
-def render_article(metadata: dict, key: str) -> str:
+def render_article(metadata: dict, key: str, preview: str | None) -> str:
     authors = " and ".join(
         f"{author.get('family', '')}, {author.get('given', '')}".strip(", ")
         for author in metadata.get("author", [])
@@ -91,6 +102,8 @@ def render_article(metadata: dict, key: str) -> str:
     for name, source_name in (("volume", "volume"), ("number", "issue"), ("pages", "page")):
         if metadata.get(source_name):
             fields.append((name, str(metadata[source_name])))
+    if preview:
+        fields.append(("preview", preview))
     body = ",\n  ".join(f"{name} = {{{value}}}" for name, value in fields)
     return f"@article{{{key},\n  {body}\n}}\n"
 
@@ -99,6 +112,7 @@ def main() -> None:
     bibtex = BIB_FILE.read_text(encoding="utf-8")
     known_dois = existing_dois(bibtex)
     known_keys = set(re.findall(r"@\w+\s*{([^,]+),", bibtex))
+    journal_covers = load_journal_covers()
     orcid_id = load_orcid_id()
     record = get_json(f"https://pub.orcid.org/v3.0/{orcid_id}/works")
 
@@ -116,7 +130,11 @@ def main() -> None:
             continue
         key = article_key(metadata, known_keys)
         known_keys.add(key)
-        additions.append(render_article(metadata, key))
+        journal = " ".join(metadata.get("container-title", []))
+        preview = journal_covers.get(journal)
+        additions.append(render_article(metadata, key, preview))
+        if not preview:
+            print(f"No cover mapping for {journal}; add one to _data/journal_covers.json.")
         print(f"Adding {metadata['DOI']}: {' '.join(metadata.get('title', []))}")
 
     if not additions:

@@ -29,6 +29,10 @@ Every Monday, the **Sync Publications from ORCID** GitHub Action reads the publi
 
 Google Scholar is linked from the site and remains useful for citation counts, but it has no stable public API for safely rebuilding a BibTeX bibliography. The old Scholar scraping cache was therefore removed: it was not used by the Publications page and contained stale sample data.
 
+### Journal-cover previews
+
+Official journal-cover thumbnails are stored in `assets/img/publication_preview/` and mapped by exact Crossref journal title in `_data/journal_covers.json`. The ORCID sync automatically assigns the mapped `preview` when a new article is added. A newly encountered journal needs one initial, manually verified publisher cover and mapping entry; this avoids unreliable scraping of copyrighted publisher artwork.
+
 ## Colours and bottom social icons
 
 The site now uses the official blue token (`v.$blue-color`) in `_sass/_themes.scss`, for both light and dark modes. To choose another colour later, change the two `--global-theme-color` and `--global-hover-color` values in that file; keep the surrounding syntax unchanged.
