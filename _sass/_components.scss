@@ -331,6 +331,41 @@ ul.task-list input[type="checkbox"] {
   text-align: left;
 }
 
+.home-news h2 a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+// Center the home-page introduction to match its section layout.
+.post:has(.home-intro) {
+  .post-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .profile {
+    float: none;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+    width: min(100%, 270px);
+  }
+
+  .more-info {
+    text-align: center;
+  }
+
+  .home-intro {
+    margin: 0 auto;
+    max-width: 48rem;
+    text-align: center;
+  }
+}
+
 .recent-publication-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
