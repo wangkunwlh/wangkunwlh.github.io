@@ -432,3 +432,18 @@ ul.task-list input[type="checkbox"] {
     grid-template-columns: 1fr;
   }
 }
+#search-toggle .nav-link {
+  align-items: center;
+  display: inline-flex;
+  font-size: 0;
+  gap: 0.25rem;
+
+  &::before {
+    content: "Search";
+    font-size: 1rem;
+  }
+
+  i {
+    font-size: 1rem;
+  }
+}
