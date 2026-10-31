@@ -140,7 +140,7 @@ def write_recent_publications(bibtex: str) -> None:
     """Publish the three newest BibTeX articles for the homepage cards."""
     image_overrides = json.loads(RECENT_IMAGES_FILE.read_text(encoding="utf-8"))
     articles = bibtex_articles(bibtex)
-    recent = sorted(articles, key=lambda article: int(re.search(r"\d{4}", article["year"]).group()), reverse=True)[:3]
+    recent = sorted(articles, key=lambda article: int(re.search(r"\d{4}", article["year"]).group()), reverse=True)[:6]
     cards = []
     for article in recent:
         doi = article["doi"].lower()
