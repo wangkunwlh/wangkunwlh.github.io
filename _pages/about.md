@@ -26,9 +26,9 @@ latest_posts:
 ---
 
 <div class="home-intro">
-  <p>I am a postdoctoral researcher at the Institute of Microstructure Technology, Karlsruhe Institute of Technology (KIT). My work explores <strong>sustainable thermal management</strong> through elastocaloric heat pumps, soft active regenerators, and numerical design for scalable solid-state cooling systems.</p>
+  <p>My research examines how caloric materials and regenerative architectures can be translated into practical <strong>solid-state cooling</strong> technologies. I develop and study elastocaloric heat pumps, with particular attention to the coupling between material response, heat transfer, and cycle operation.</p>
 
-  <p>My research connects functional materials, mechanical design, additive manufacturing, and heat-transfer modelling. I am particularly interested in low-cost elastocaloric devices based on soft materials and porous regenerative architectures.</p>
+  <p>Current work combines mechanics, thermal-fluid modelling, and additive manufacturing to design soft and porous regenerators with low actuation loads and improved heat exchange. The broader aim is to establish scalable, efficient alternatives to vapour-compression cooling where compactness, durability, and reduced environmental impact matter.</p>
 
   <p>Please see my <a href="/research/">research</a> and <a href="/publications/">publications</a>, or get in touch by email.</p>
 </div>
