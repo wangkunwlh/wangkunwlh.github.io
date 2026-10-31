@@ -8,19 +8,19 @@
     "alt": "Microchannel model schematic from the dynamic-mesh publication"
   },
   {
+    "title": "Caloric cooling devices and systems",
+    "authors": "Kun Wang, Stefan Seelecke, Qingping Sun, Qibing Pei, Manfred Kohl, and Jingyuan Xu",
+    "doi": "10.1038/s41560-026-02143-1",
+    "year": "2026",
+    "image": "/assets/img/publication_preview/nature-energy.png",
+    "alt": "Publication preview for Caloric cooling devices and systems"
+  },
+  {
     "title": "Numerical study of enhanced cooling in active elastocaloric regenerators with porous woven structures",
     "authors": "Kun Wang, Manfred Kohl, and Jingyuan Xu",
     "doi": "10.1016/j.apenergy.2025.126180",
     "year": "2025",
     "image": "/assets/img/publication_figures/woven-figure-1.png",
     "alt": "Figure 1 from the woven-regenerator publication"
-  },
-  {
-    "title": "A 3D-printed full-soft regenerative elastocaloric cooler",
-    "authors": "Kun Wang, Kurt Engelbrecht, Christian R. H. Bahl, and Rasmus Bjork",
-    "doi": "10.1016/j.enconman.2025.119811",
-    "year": "2025",
-    "image": "/assets/img/publication_figures/full-soft-cycle.png",
-    "alt": "Cooling-cycle schematic from the full-soft regenerative cooler publication"
   }
 ]
