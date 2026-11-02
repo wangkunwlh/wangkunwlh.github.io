@@ -11,6 +11,14 @@
     "image": "/assets/img/publication_figures/dynamic-mesh-microchannel.png",
     "alt": "Microchannel model schematic from the dynamic-mesh publication"
   },
+  "10.1016/j.energy.2024.133823": {
+    "image": "/assets/img/publication_figures/gasoline-vapor-figure-1.png",
+    "alt": "Figure 1 from the gasoline-vapor recovery publication"
+  },
+  "10.1016/j.mtla.2024.102034": {
+    "image": "/assets/img/publication_figures/microchannel-figure-1.png",
+    "alt": "Figure 1 from the microchannel magnetic-regenerator publication"
+  },
   "10.1038/s41560-026-02143-1": {
     "image": "/assets/img/publication_figures/nature-energy-caloric-devices.jpg",
     "alt": "Caloric cooling devices and systems schematic"

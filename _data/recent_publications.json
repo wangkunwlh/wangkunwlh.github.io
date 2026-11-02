@@ -36,15 +36,15 @@
     "authors": "Liya Miao, Kun Wang, Xiang Lu, Yifei Zhang, and Jian Liu",
     "doi": "10.1016/j.mtla.2024.102034",
     "year": "2024",
-    "image": "/assets/img/publication_preview/materialia.png",
-    "alt": "Publication preview for Microchannel magnetic regenerators with optimized porosity by electrodischarge drilling: Microstructure and refrigeration performance"
+    "image": "/assets/img/publication_figures/microchannel-figure-1.png",
+    "alt": "Figure 1 from the microchannel magnetic-regenerator publication"
   },
   {
     "title": "Advancing gasoline vapor recovery in oil depots: integrating cooling and adsorption technologies",
     "authors": "Jierong Liang, Li Sun, Chong Cheng, Kun Wang, Tingting Zhu, and Tingxun Li",
     "doi": "10.1016/j.energy.2024.133823",
     "year": "2024",
-    "image": "/assets/img/publication_preview/energy.png",
-    "alt": "Publication preview for Advancing gasoline vapor recovery in oil depots: integrating cooling and adsorption technologies"
+    "image": "/assets/img/publication_figures/gasoline-vapor-figure-1.png",
+    "alt": "Figure 1 from the gasoline-vapor recovery publication"
   }
 ]
