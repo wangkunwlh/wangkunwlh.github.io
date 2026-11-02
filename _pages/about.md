@@ -70,6 +70,14 @@ latest_posts:
     transform: translateY(-0.8rem);
     width: 36.7px !important;
   }
+
+  html[data-theme="dark"] .social .contact-icons a[href*="researchgate.net"] img {
+    filter: invert(1) brightness(0.9);
+  }
+
+  html[data-theme="dark"] .social .contact-icons a[href*="researchgate.net"]:hover img {
+    filter: none;
+  }
 </style>
 
 <script>
