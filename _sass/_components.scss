@@ -463,11 +463,12 @@ ul.task-list input[type="checkbox"] {
   align-items: center;
   border-radius: 0.25rem;
   display: inline-flex;
-  height: 2.5rem;
+  height: 2rem;
   justify-content: center;
   position: relative;
   vertical-align: bottom;
-  width: 2.5rem;
+  transform: translateY(-0.8rem);
+  width: 2rem;
 
   &::after {
     background: var(--global-theme-color);
