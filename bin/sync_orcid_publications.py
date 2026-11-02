@@ -136,8 +136,25 @@ def display_authors(authors: str) -> str:
     return ", ".join(names[:-1]) + ", and " + names[-1]
 
 
+JOURNAL_ABBREVIATIONS = {
+    "Applied Energy": "Appl. Energy",
+    "Energy Conversion and Management": "Energy Convers. Manag.",
+}
+
+
+def display_venue(article: dict[str, str]) -> str:
+    """Format a compact journal citation for a homepage card."""
+    journal = article.get("journal", "")
+    citation = JOURNAL_ABBREVIATIONS.get(journal, journal)
+    if article.get("volume"):
+        citation += f" {article['volume']}"
+    if article.get("pages"):
+        citation += f", {article['pages']}" if article.get("volume") else f" {article['pages']}"
+    return f"{citation} ({article['year']})"
+
+
 def write_recent_publications(bibtex: str) -> None:
-    """Publish the three newest BibTeX articles for the homepage cards."""
+    """Publish the six newest BibTeX articles for the homepage cards."""
     image_overrides = json.loads(RECENT_IMAGES_FILE.read_text(encoding="utf-8"))
     articles = bibtex_articles(bibtex)
     recent = sorted(articles, key=lambda article: int(re.search(r"\d{4}", article["year"]).group()), reverse=True)[:6]
@@ -152,6 +169,7 @@ def write_recent_publications(bibtex: str) -> None:
             {
                 "title": article["title"],
                 "authors": display_authors(article.get("author", "")),
+                "venue": display_venue(article),
                 "doi": doi,
                 "year": article["year"],
                 "image": image,

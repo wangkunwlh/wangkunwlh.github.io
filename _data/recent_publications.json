@@ -2,6 +2,7 @@
   {
     "title": "Dynamic-mesh modeling of low-cost polymer microchannel regenerators for elastocaloric cooling",
     "authors": "Kun Wang, Qing Wang, Manfred Kohl, Rasmus Bj\u00f8rk, and Jingyuan Xu",
+    "venue": "Energy Convers. Manag. 371, 122234 (2027)",
     "doi": "10.1016/j.enconman.2026.122234",
     "year": "2027",
     "image": "/assets/img/publication_figures/dynamic-mesh-microchannel.png",
@@ -10,6 +11,7 @@
   {
     "title": "Caloric cooling devices and systems",
     "authors": "Kun Wang, Stefan Seelecke, Qingping Sun, Qibing Pei, Manfred Kohl, and Jingyuan Xu",
+    "venue": "Nature Energy (2026)",
     "doi": "10.1038/s41560-026-02143-1",
     "year": "2026",
     "image": "/assets/img/publication_figures/nature-energy-caloric-devices.jpg",
@@ -18,6 +20,7 @@
   {
     "title": "Numerical study of enhanced cooling in active elastocaloric regenerators with porous woven structures",
     "authors": "Kun Wang, Manfred Kohl, and Jingyuan Xu",
+    "venue": "Appl. Energy (2025)",
     "doi": "10.1016/j.apenergy.2025.126180",
     "year": "2025",
     "image": "/assets/img/publication_figures/woven-figure-1.png",
@@ -26,6 +29,7 @@
   {
     "title": "A 3D-printed full-soft regenerative elastocaloric cooler",
     "authors": "Kun Wang, Kurt Engelbrecht, Christian R. H. Bahl, and Rasmus Bjork",
+    "venue": "Energy Convers. Manag. (2025)",
     "doi": "10.1016/j.enconman.2025.119811",
     "year": "2025",
     "image": "/assets/img/publication_figures/full-soft-cycle.png",
@@ -34,6 +38,7 @@
   {
     "title": "Microchannel magnetic regenerators with optimized porosity by electrodischarge drilling: Microstructure and refrigeration performance",
     "authors": "Liya Miao, Kun Wang, Xiang Lu, Yifei Zhang, and Jian Liu",
+    "venue": "Materialia (2024)",
     "doi": "10.1016/j.mtla.2024.102034",
     "year": "2024",
     "image": "/assets/img/publication_figures/microchannel-figure-1.png",
@@ -42,6 +47,7 @@
   {
     "title": "Advancing gasoline vapor recovery in oil depots: integrating cooling and adsorption technologies",
     "authors": "Jierong Liang, Li Sun, Chong Cheng, Kun Wang, Tingting Zhu, and Tingxun Li",
+    "venue": "Energy (2024)",
     "doi": "10.1016/j.energy.2024.133823",
     "year": "2024",
     "image": "/assets/img/publication_figures/gasoline-vapor-figure-1.png",

@@ -401,6 +401,15 @@ ul.task-list input[type="checkbox"] {
     font-size: 0.68rem;
     font-weight: normal;
     line-height: 1.35;
+    padding: 0 0.85rem 0.25rem;
+  }
+
+  .recent-publication-venue {
+    color: var(--global-text-color);
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    line-height: 1.35;
     padding: 0 0.85rem 0.85rem;
   }
 

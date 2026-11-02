@@ -51,6 +51,7 @@ latest_posts:
         <img src="{{ publication.image | relative_url }}" alt="{{ publication.alt }}">
         <span class="recent-publication-title">{{ publication.title }}</span>
         <span class="recent-publication-authors">{{ publication.authors }}</span>
+        <span class="recent-publication-venue">{{ publication.venue }}</span>
       </a>
     {% endfor %}
   </div>
