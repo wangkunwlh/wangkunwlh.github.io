@@ -63,12 +63,12 @@ latest_posts:
   .social .contact-icons a[href*="researchgate.net"] {
     align-items: center !important;
     display: inline-flex !important;
-    height: 38px !important;
+    height: 37px !important;
     justify-content: center !important;
     line-height: 0 !important;
     vertical-align: bottom !important;
     transform: translateY(-0.8rem);
-    width: 38px !important;
+    width: 37px !important;
   }
 </style>
 
