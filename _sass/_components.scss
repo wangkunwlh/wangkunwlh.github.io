@@ -459,13 +459,45 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.social .contact-icons a img[src$="researchgate-logo.png"] {
-  height: 2.5rem !important;
-  margin-bottom: 0 !important;
-  vertical-align: baseline;
-  width: 2.5rem !important;
+.social .contact-icons a[href*="researchgate.net"] {
+  align-items: center;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  height: 2.5rem;
+  justify-content: center;
+  position: relative;
+  vertical-align: bottom;
+  width: 2.5rem;
+
+  &::after {
+    background: var(--global-theme-color);
+    border-radius: inherit;
+    content: "";
+    inset: 0;
+    mix-blend-mode: screen;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  img {
+    display: block;
+    height: 100% !important;
+    margin-bottom: 0 !important;
+    object-fit: cover;
+    width: 100% !important;
+  }
 }
 
-html[data-theme="dark"] .social .contact-icons a img[src$="researchgate-logo.png"] {
+html[data-theme="dark"] .social .contact-icons a[href*="researchgate.net"] img {
   filter: invert(1);
+}
+
+html[data-theme="dark"] .social .contact-icons a[href*="researchgate.net"]:hover img {
+  filter: none;
 }

@@ -57,3 +57,13 @@ latest_posts:
   </div>
   <a class="all-publications-btn" href="{{ '/publications/' | relative_url }}">All publications</a>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const researchGate = document.querySelector('.contact-icons a[href*="researchgate.net"]');
+    if (researchGate) {
+      researchGate.setAttribute("title", "ResearchGate");
+      researchGate.setAttribute("aria-label", "ResearchGate");
+    }
+  });
+</script>
