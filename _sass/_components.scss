@@ -398,19 +398,21 @@ ul.task-list input[type="checkbox"] {
   .recent-publication-authors {
     color: var(--global-text-color-light);
     display: block;
-    font-size: 0.68rem;
+    font-size: 0.68rem !important;
     font-weight: normal;
     line-height: 1.35;
     padding: 0 0.85rem 0.25rem;
+    text-align: left;
   }
 
   .recent-publication-venue {
     color: var(--global-text-color);
     display: block;
-    font-size: 0.68rem;
+    font-size: 0.68rem !important;
     font-weight: 700;
     line-height: 1.35;
-    padding: 0 0.85rem 0.85rem;
+    padding: 0 0.85rem 0.85rem !important;
+    text-align: left;
   }
 
   &:hover {
@@ -455,4 +457,15 @@ ul.task-list input[type="checkbox"] {
   i {
     font-size: 1rem;
   }
+}
+
+.social .contact-icons a img[src$="researchgate-logo.png"] {
+  height: 2.5rem !important;
+  margin-bottom: 0 !important;
+  vertical-align: baseline;
+  width: 2.5rem !important;
+}
+
+html[data-theme="dark"] .social .contact-icons a img[src$="researchgate-logo.png"] {
+  filter: invert(1);
 }

@@ -143,14 +143,9 @@ JOURNAL_ABBREVIATIONS = {
 
 
 def display_venue(article: dict[str, str]) -> str:
-    """Format a compact journal citation for a homepage card."""
+    """Format a compact journal-and-year label for a homepage card."""
     journal = article.get("journal", "")
-    citation = JOURNAL_ABBREVIATIONS.get(journal, journal)
-    if article.get("volume"):
-        citation += f" {article['volume']}"
-    if article.get("pages"):
-        citation += f", {article['pages']}" if article.get("volume") else f" {article['pages']}"
-    return f"{citation} ({article['year']})"
+    return f"{JOURNAL_ABBREVIATIONS.get(journal, journal)} ({article['year']})"
 
 
 def write_recent_publications(bibtex: str) -> None:
