@@ -96,28 +96,6 @@ latest_posts:
   <a class="all-publications-btn" href="{{ '/publications/' | relative_url }}">All publications</a>
 </section>
 
-<style>
-  /* Keep the custom ResearchGate image on the same visual baseline as the icon font. */
-  .social .contact-icons a[href*="researchgate.net"] {
-    align-items: center !important;
-    display: inline-flex !important;
-    height: 36.7px !important;
-    justify-content: center !important;
-    line-height: 0 !important;
-    vertical-align: bottom !important;
-    transform: translateY(-0.8rem);
-    width: 36.7px !important;
-  }
-
-  html[data-theme="dark"] .social .contact-icons a[href*="researchgate.net"] img {
-    filter: invert(1) brightness(0.9);
-  }
-
-  html[data-theme="dark"] .social .contact-icons a[href*="researchgate.net"]:hover img {
-    filter: none;
-  }
-</style>
-
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const researchGate = document.querySelector('.contact-icons a[href*="researchgate.net"]');
