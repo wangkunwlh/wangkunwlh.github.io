@@ -5,14 +5,14 @@ permalink: /research/
 description: Research directions and active projects in sustainable thermal management.
 nav: true
 nav_order: 2
-display_categories: [devices, modeling, materials]
+display_categories: [device, modeling, material]
 submenu:
-  - title: Devices
-    anchor: devices
+  - title: Device
+    anchor: device
   - title: Modeling
     anchor: modeling
-  - title: Materials
-    anchor: materials
+  - title: Material
+    anchor: material
 horizontal: false
 ---
 <div class="projects">

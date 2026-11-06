@@ -4,7 +4,7 @@ title: Elastocaloric materials
 description: Composition, microstructure, and fatigue behaviour of shape-memory alloys for long-life cooling cycles.
 img: /assets/img/gallery/research-01.svg
 importance: 4
-category: materials
+category: material
 ---
 Materials work underpins every device direction on this page: the transformation behaviour, hysteresis, and fatigue life of the active material set the achievable temperature span and the durability of a cooling cycle.
 

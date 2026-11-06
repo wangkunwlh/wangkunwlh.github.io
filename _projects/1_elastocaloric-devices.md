@@ -4,6 +4,6 @@ title: Soft elastocaloric devices
 description: Low-cost solid-state cooling concepts based on soft materials and additive manufacturing.
 img: /assets/img/3.jpg
 importance: 1
-category: devices
+category: device
 ---
 I develop full-soft regenerative coolers and compliant device architectures that aim to reduce actuation stress and enable scalable, practical elastocaloric cooling.

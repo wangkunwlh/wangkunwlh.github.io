@@ -5,7 +5,7 @@ permalink: /
 # The theme generates the home/About navigation item automatically.
 nav: false
 eyebrow: Postdoctoral Researcher · Ph.D.
-subtitle: Elastocaloric cooling and sustainable thermal management
+subtitle: Elastocaloric cooling technology and sustainable thermal management
 profile:
   align: right
   image: prof_pic.jpg
@@ -43,12 +43,12 @@ profile:
       <div class="side-item">
         <span class="side-when">2020 — 2023</span>
         <span class="side-what">Ph.D., Energy Conversion and Storage</span>
-        <span class="side-where">Technical University of Denmark</span>
+        <span class="side-where">Technical University of Denmark · DTU</span>
       </div>
       <div class="side-item">
         <span class="side-when">2017 — 2020</span>
         <span class="side-what">M.Sc., Material Physics and Chemistry</span>
-        <span class="side-where">University of Chinese Academy of Sciences</span>
+        <span class="side-where">University of Chinese Academy of Sciences · UCAS</span>
       </div>
     </div>
 ---
