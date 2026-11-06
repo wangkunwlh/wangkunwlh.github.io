@@ -4,7 +4,8 @@ title: Home
 permalink: /
 # The theme generates the home/About navigation item automatically.
 nav: false
-subtitle: Postdoctoral Researcher at the Institute of Microstructure Technology, Karlsruhe Institute of Technology
+eyebrow: Postdoctoral Researcher · Ph.D.
+subtitle: Elastocaloric cooling and sustainable thermal management
 profile:
   align: right
   image: prof_pic.jpg
@@ -31,17 +32,25 @@ profile:
         <span class="side-what">Postdoctoral Researcher</span>
         <span class="side-where">KIT · Institute of Microstructure Technology</span>
       </div>
+      <div class="side-item">
+        <span class="side-when">Dec 2023 — Jan 2024</span>
+        <span class="side-what">Research Assistant</span>
+        <span class="side-where">DTU · Energy Conversion and Storage</span>
+      </div>
     </div>
-selected_papers: false
-social: true
-announcements:
-  enabled: false
-  scrollable: true
-  limit: 5
-latest_posts:
-  enabled: false
-  scrollable: true
-  limit: 3
+    <div class="side-group">
+      <h3>Education</h3>
+      <div class="side-item">
+        <span class="side-when">2020 — 2023</span>
+        <span class="side-what">Ph.D., Energy Conversion and Storage</span>
+        <span class="side-where">Technical University of Denmark</span>
+      </div>
+      <div class="side-item">
+        <span class="side-when">2017 — 2020</span>
+        <span class="side-what">M.Sc., Material Physics and Chemistry</span>
+        <span class="side-where">University of Chinese Academy of Sciences</span>
+      </div>
+    </div>
 ---
 
 <div class="home-intro">

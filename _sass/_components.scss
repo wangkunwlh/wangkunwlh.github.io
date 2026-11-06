@@ -830,14 +830,14 @@ body::after {
 
 .post:has(.home-intro) > .post-header .post-title {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
   margin: 0 0 1rem;
 }
 
 .post:has(.home-intro) > .post-header .desc,
 .post:has(.home-intro) > .post-header .post-description {
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 3;
   margin: 0 0 2.6rem;
   padding-bottom: 2.2rem;
   border-bottom: 1px solid var(--line);
@@ -861,7 +861,7 @@ body::after {
 
 .post:has(.home-intro) > article > .profile {
   grid-column: 2;
-  grid-row: 1 / span 3;
+  grid-row: 1 / span 4;
   float: none !important;
   margin: 0 !important;
   width: auto !important;
@@ -932,7 +932,7 @@ body::after {
 
 .post:has(.home-intro) .home-intro {
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 4;
   max-width: 58ch !important;
   margin: 0 !important;
   text-align: left !important;
@@ -2380,4 +2380,21 @@ html[data-theme="light"] .post:has(.home-intro) > article > .profile::before {
   font-size: 0.74rem;
   line-height: 1.45;
   color: var(--ink-3);
+}
+
+
+/* hero eyebrow above the name */
+.post-header .eyebrow {
+  margin: 0 0 0.85rem;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.post:has(.home-intro) > .post-header .eyebrow {
+  grid-column: 1;
+  grid-row: 1;
 }
