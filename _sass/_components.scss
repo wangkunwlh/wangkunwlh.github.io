@@ -652,6 +652,7 @@ body::after {
     inset 0 -1px 0 rgba(255, 255, 255, 0.05),
     var(--glass-shadow);
   transition:
+    width 0.55s cubic-bezier(0.4, 0, 0.2, 1),
     background 0.45s cubic-bezier(0.4, 0, 0.2, 1),
     border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1),
@@ -2405,4 +2406,28 @@ html[data-theme="light"] .post:has(.home-intro) > article > .profile::before {
 .post:has(.home-intro) > .post-header .eyebrow {
   grid-column: 1;
   grid-row: 1;
+}
+
+
+/* ---------- top of page: split menu that glides together on scroll ---------- */
+
+@media (min-width: 901px) {
+  #navbar .navbar-collapse {
+    flex: 1 1 auto;
+  }
+
+  #navbar .navbar-nav {
+    flex: 1 1 auto;
+  }
+
+  /* keep the action buttons at the far right while the bar is expanded */
+  #navbar .nav-item:has(#search-toggle) {
+    margin-left: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #navbar .container {
+    transition: none;
+  }
 }

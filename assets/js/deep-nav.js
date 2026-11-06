@@ -1,26 +1,61 @@
-/* Marks the navbar as "at top" while the page is unscrolled, so the
-   liquid-glass capsule can dissolve into the page background and fade in
-   as soon as the visitor scrolls. No-JS visitors simply keep the glass bar. */
+/* Keeps the navbar compact while scrolling and lets it stretch across the page
+   at the very top, so the menu items glide together as the glass appears. */
 (function () {
   var nav = document.getElementById("navbar");
   if (!nav) return;
+  var pill = nav.querySelector(".container");
+  if (!pill) return;
 
   var THRESHOLD = 28;
-  var ticking = false;
+  var desktop = window.matchMedia("(min-width: 901px)");
+  var compactWidth = 0;
+
+  function measureCompact() {
+    var previous = pill.style.width;
+    pill.style.width = "";
+    compactWidth = Math.round(pill.getBoundingClientRect().width);
+    pill.style.width = previous;
+  }
 
   function update() {
-    var y = window.scrollY || document.documentElement.scrollTop || 0;
-    nav.classList.toggle("nav-at-top", y < THRESHOLD);
-    ticking = false;
+    if (!desktop.matches) {
+      nav.classList.toggle("nav-at-top", (window.scrollY || 0) < THRESHOLD);
+      pill.style.width = "";
+      return;
+    }
+
+    var atTop = (window.scrollY || 0) < THRESHOLD;
+    nav.classList.toggle("nav-at-top", atTop);
+
+    if (!compactWidth) measureCompact();
+
+    var expanded = Math.min(window.innerWidth - 48, 1120);
+    pill.style.width = (atTop ? expanded : compactWidth) + "px";
   }
 
-  function onScroll() {
+  var ticking = false;
+  function schedule() {
     if (ticking) return;
     ticking = true;
-    window.requestAnimationFrame(update);
+    window.requestAnimationFrame(function () {
+      ticking = false;
+      update();
+    });
   }
 
-  window.addEventListener("scroll", onScroll, { passive: true });
-  window.addEventListener("resize", onScroll);
+  window.addEventListener("scroll", schedule, { passive: true });
+  window.addEventListener("resize", function () {
+    compactWidth = 0;
+    measureCompact();
+    schedule();
+  });
+
   update();
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () {
+      compactWidth = 0;
+      measureCompact();
+      schedule();
+    });
+  }
 })();
