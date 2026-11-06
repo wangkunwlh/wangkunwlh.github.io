@@ -5,7 +5,7 @@ permalink: /research/
 description: Research directions and active projects in sustainable thermal management.
 nav: true
 nav_order: 2
-display_categories: [devices, modeling]
+display_categories: [devices, modeling, materials]
 horizontal: false
 ---
 <div class="projects">
