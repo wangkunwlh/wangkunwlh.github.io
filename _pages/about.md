@@ -13,6 +13,25 @@ profile:
     <p>Karlsruhe, Germany</p>
     <p>Karlsruhe Institute of Technology</p>
     <p><a href="mailto:kun.wang@kit.edu">kun.wang@kit.edu</a></p>
+  # Optional sidebar block under the contact card. Add an Education group the
+  # same way once you want it shown (uncomment and fill in):
+  #   <div class="side-group">
+  #     <h3>Education</h3>
+  #     <div class="side-item">
+  #       <span class="side-when">2019 — 2023</span>
+  #       <span class="side-what">PhD, Mechanical Engineering</span>
+  #       <span class="side-where">University name</span>
+  #     </div>
+  #   </div>
+  side_details: |
+    <div class="side-group">
+      <h3>Experience</h3>
+      <div class="side-item">
+        <span class="side-when">2024 — present</span>
+        <span class="side-what">Postdoctoral Researcher</span>
+        <span class="side-where">KIT · Institute of Microstructure Technology</span>
+      </div>
+    </div>
 selected_papers: false
 social: true
 announcements:

@@ -98,6 +98,20 @@
                 </li>
               {% else %}
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
+                {% if p.submenu %}
+                <li class="nav-item has-submenu {% if page.url contains parent_link %}active{% endif %}">
+                  {%- if p.permalink contains '://' -%}{%- assign url = p.permalink -%}{%- else -%}{%- assign url = p.url -%}{%- endif %}
+                  <a class="nav-link" href="{{ url | relative_url }}">
+                    {{- p.title }}
+                    {% if page.url contains parent_link %}<span class="sr-only">(current)</span>{% endif %}
+                  </a>
+                  <div class="nav-submenu" role="menu">
+                    {% for item in p.submenu %}
+                      <a class="nav-submenu-item" role="menuitem" href="{{ url | relative_url }}#{{ item.anchor }}">{{ item.title }}</a>
+                    {% endfor %}
+                  </div>
+                </li>
+                {% else %}
                 <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
                   {%- if p.permalink contains '://' -%}
                     {%- assign url = p.permalink -%}
@@ -113,6 +127,7 @@
                     {% endif %}
                   </a>
                 </li>
+                {% endif %}
               {% endif %}
             {% endif %}
           {% endfor %}

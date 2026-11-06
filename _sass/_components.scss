@@ -2249,3 +2249,135 @@ html[data-theme="light"] .post:has(.home-intro) > article > .profile::before {
   background-color: var(--accent);
 }
 
+
+
+/* ---------- nav hover submenu ---------- */
+
+#navbar .nav-item.has-submenu {
+  position: relative;
+}
+
+.nav-submenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  z-index: 30;
+  min-width: 170px;
+  padding: 7px;
+  border-radius: 16px;
+  border: 1px solid var(--glass-edge);
+  background:
+    linear-gradient(180deg, var(--glass-sheen) 0%, rgba(255, 255, 255, 0) 58%),
+    var(--glass);
+  -webkit-backdrop-filter: blur(24px) saturate(185%);
+  backdrop-filter: blur(24px) saturate(185%);
+  box-shadow:
+    inset 0 1px 0 var(--glass-inner),
+    var(--glass-shadow);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translate(-50%, -6px);
+  transition:
+    opacity 0.22s ease,
+    transform 0.22s cubic-bezier(0.2, 0.7, 0.3, 1),
+    visibility 0.22s;
+}
+
+/* invisible bridge so the pointer can travel from the link to the menu */
+.nav-submenu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  height: 10px;
+}
+
+#navbar .nav-item.has-submenu:hover .nav-submenu,
+#navbar .nav-item.has-submenu:focus-within .nav-submenu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.nav-submenu-item {
+  display: block;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  font-size: 13px;
+  color: var(--ink-2) !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-submenu-item:hover,
+.nav-submenu-item:focus-visible {
+  background: var(--tint-2);
+  color: var(--ink) !important;
+}
+
+@media (max-width: 900px) {
+  .nav-submenu {
+    display: none;
+  }
+}
+
+/* ---------- home sidebar: experience / education ---------- */
+
+.side-details {
+  text-align: left;
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+}
+
+.side-group h3 {
+  margin: 0 0 0.65rem;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.side-group + .side-group {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.side-item + .side-item {
+  margin-top: 0.75rem;
+}
+
+.side-when {
+  display: block;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.side-what {
+  display: block;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.side-where {
+  display: block;
+  margin-top: 0.12rem;
+  font-size: 0.74rem;
+  line-height: 1.45;
+  color: var(--ink-3);
+}

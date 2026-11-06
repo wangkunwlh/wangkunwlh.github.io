@@ -6,6 +6,13 @@ description: Research directions and active projects in sustainable thermal mana
 nav: true
 nav_order: 2
 display_categories: [devices, modeling, materials]
+submenu:
+  - title: Devices
+    anchor: devices
+  - title: Modeling
+    anchor: modeling
+  - title: Materials
+    anchor: materials
 horizontal: false
 ---
 <div class="projects">
