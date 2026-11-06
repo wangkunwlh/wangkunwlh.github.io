@@ -635,11 +635,11 @@ body::after {
 
 #navbar .container {
   position: relative;
-  width: calc(100% - 3rem);
+  width: fit-content;
   max-width: 1120px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0.4rem 1.1rem;
+  padding: 0.4rem 0.5rem 0.4rem 0.9rem;
   border-radius: 999px;
   border: 1px solid var(--glass-edge);
   background:
@@ -1973,6 +1973,10 @@ article .col img:hover {
   max-width: var(--max-content-width);
 }
 
+#navbar .container {
+  max-width: 1120px;
+}
+
 /* ---------- final tuning ---------- */
 
 /* restore numbered section badges (beats the generic h2 marker) */
@@ -2215,10 +2219,9 @@ html[data-theme="light"] .post:has(.home-intro) > article > .profile::before {
 /* pill sizing on small screens */
 @media (max-width: 900px) {
   #navbar .container {
-    width: calc(100% - 1.7rem);
-    max-width: none;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin-left: 0.85rem;
+    margin-right: 0.85rem;
     flex-wrap: wrap;
   }
 
@@ -2394,15 +2397,4 @@ html[data-theme="light"] .post:has(.home-intro) > article > .profile::before {
 .post:has(.home-intro) > .post-header .eyebrow {
   grid-column: 1;
   grid-row: 1;
-}
-
-
-/* wide bar: centre the menu when the page has no wordmark */
-#navbar .container:not(:has(.navbar-brand)) .navbar-collapse {
-  flex-basis: 100%;
-}
-
-#navbar .container:not(:has(.navbar-brand)) .navbar-nav {
-  margin-left: auto;
-  margin-right: auto;
 }
